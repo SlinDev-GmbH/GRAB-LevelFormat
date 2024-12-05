@@ -34,7 +34,7 @@ message AmbienceSettings
 	float sunAzimuth = 4;
 	float sunSize = 5;
 
-	float fogDDensity = 6;
+	float fogDensity = 6;
 }
 
 enum LevelNodeShape
@@ -42,14 +42,17 @@ enum LevelNodeShape
 	START = 0;
 	FINISH = 1;
 	SIGN = 2;
+	GRAVITY = 3;
+	LOBBYTERMINAL = 4;
 
-	__END_OF_SPECIAL_PARTS__ = 3;
+	__END_OF_SPECIAL_PARTS__ = 5;
 
 	CUBE = 1000;
 	SPHERE = 1001;
 	CYLINDER = 1002;
 	PYRAMID = 1003;
 	PRISM = 1004;
+	CONE = 1005;
 }
 
 enum LevelNodeMaterial
@@ -65,6 +68,7 @@ enum LevelNodeMaterial
 	GRABBABLE_CRUMBLING= 7;
 	DEFAULT_COLORED = 8;
 	BOUNCING = 9;
+	SNOW = 10;
 }
 
 message LevelNodeGroup
@@ -102,7 +106,11 @@ message LevelNodeStatic
 	Vector scale = 4;
 	Quaternion rotation = 5;
 
-	Color color = 6;
+	Color color1 = 6;
+	Color color2 = 9; //Used for colored lava blocks, blending between the two colors, but also used for specularity on colored default blocks!
+
+	bool isNeon = 7;
+	bool isTransparent = 8;
 }
 
 message LevelNodeCrumbling
@@ -126,17 +134,104 @@ message LevelNodeSign
 	string text = 3;
 }
 
+message LevelNodeGravity
+{
+	enum Mode
+	{
+		DEFAULT = 0;
+		NOLEGS = 1; //gtag like movement with the head on the ground, also no leg collisions with lava
+	}
+
+	Mode mode = 1;
+
+	Vector position = 2;
+	Vector scale = 3;
+	Quaternion rotation = 4;
+
+	Vector direction = 5;
+}
+
+message LevelNodeLobbyTerminal
+{
+	Vector position = 2;
+	Quaternion rotation = 4;
+}
+
+/*
+message TriggerTargetAnimation
+{
+	enum Mode
+	{
+		START = 0;
+		STOP = 1;
+		TOGGLE = 2;
+	}
+
+	string name = 1;
+	Mode mode = 2;
+}
+
+message TriggerTarget
+{
+	uint64 objectID = 1;
+
+	oneof content
+	{
+		TriggerTargetAnimation triggerTargetAnimation = 2;
+	}
+}
+
+message LevelNodeTrigger
+{
+	Vector position = 1;
+	Vector scale = 2;
+	Quaternion rotation = 3;
+
+	repeated TriggerTarget triggerTarget = 4;
+
+	bool canHands = 8;
+	bool canHead = 9;
+	bool canGrapple = 10;
+	bool canBlock = 11;
+}*/
+
+message AnimationFrame
+{
+	float time = 1;
+	Vector position = 2;
+	Quaternion rotation = 3;
+}
+
+message Animation
+{
+	enum Direction
+	{
+		RESTART = 0; //After the last frame, jump back to the first frame
+		PINGPONG = 1; //After the last frame, play the animation backwards
+	}
+
+	string name = 1;
+	repeated AnimationFrame frames = 2;
+	Direction direction = 3;
+	float speed = 4;
+}
+
 message LevelNode
 {
 	bool isLocked = 6;
 
 	oneof content
 	{
-		Types.LevelNodeStart levelNodeStart = 1;
-		Types.LevelNodeFinish levelNodeFinish = 2;
-		Types.LevelNodeStatic levelNodeStatic = 3;
-		Types.LevelNodeSign levelNodeSign = 4;
-		Types.LevelNodeCrumbling levelNodeCrumbling = 5;
-		Types.LevelNodeGroup levelNodeGroup = 7;
+		LevelNodeStart levelNodeStart = 1;
+		LevelNodeFinish levelNodeFinish = 2;
+		LevelNodeStatic levelNodeStatic = 3;
+		LevelNodeSign levelNodeSign = 4;
+		LevelNodeCrumbling levelNodeCrumbling = 5;
+		LevelNodeGroup levelNodeGroup = 7;
+		LevelNodeGravity levelNodeGravity = 8;
+		LevelNodeLobbyTerminal levelNodeLobbyTerminal = 9;
 	}
+
+	//A level node can have any number (might limit it in the UI) of named animations, if groups are involved every block that is part of the same animation should have an animation with the same name
+	repeated Animation animations = 15;
 }

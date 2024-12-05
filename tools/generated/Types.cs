@@ -27,63 +27,88 @@ namespace COD.Types {
             "Cgt0eXBlcy5wcm90bxIJQ09ELlR5cGVzIikKBlZlY3RvchIJCgF4GAEgASgC",
             "EgkKAXkYAiABKAISCQoBehgDIAEoAiI4CgpRdWF0ZXJuaW9uEgkKAXgYASAB",
             "KAISCQoBeRgCIAEoAhIJCgF6GAMgASgCEgkKAXcYBCABKAIiMwoFQ29sb3IS",
-            "CQoBchgBIAEoAhIJCgFnGAIgASgCEgkKAWIYAyABKAISCQoBYRgEIAEoAiK2",
+            "CQoBchgBIAEoAhIJCgFnGAIgASgCEgkKAWIYAyABKAISCQoBYRgEIAEoAiK1",
             "AQoQQW1iaWVuY2VTZXR0aW5ncxIoCg5za3laZW5pdGhDb2xvchgBIAEoCzIQ",
             "LkNPRC5UeXBlcy5Db2xvchIpCg9za3lIb3Jpem9uQ29sb3IYAiABKAsyEC5D",
             "T0QuVHlwZXMuQ29sb3ISEwoLc3VuQWx0aXR1ZGUYAyABKAISEgoKc3VuQXpp",
-            "bXV0aBgEIAEoAhIPCgdzdW5TaXplGAUgASgCEhMKC2ZvZ0REZW5zaXR5GAYg",
-            "ASgCIqoBCg5MZXZlbE5vZGVHcm91cBIjCghwb3NpdGlvbhgBIAEoCzIRLkNP",
-            "RC5UeXBlcy5WZWN0b3ISIAoFc2NhbGUYAiABKAsyES5DT0QuVHlwZXMuVmVj",
-            "dG9yEicKCHJvdGF0aW9uGAMgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24S",
-            "KAoKY2hpbGROb2RlcxgEIAMoCzIULkNPRC5UeXBlcy5MZXZlbE5vZGUibgoO",
-            "TGV2ZWxOb2RlU3RhcnQSIwoIcG9zaXRpb24YASABKAsyES5DT0QuVHlwZXMu",
-            "VmVjdG9yEicKCHJvdGF0aW9uGAIgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5p",
-            "b24SDgoGcmFkaXVzGAMgASgCIkYKD0xldmVsTm9kZUZpbmlzaBIjCghwb3Np",
-            "dGlvbhgBIAEoCzIRLkNPRC5UeXBlcy5WZWN0b3ISDgoGcmFkaXVzGAIgASgC",
-            "IvwBCg9MZXZlbE5vZGVTdGF0aWMSKAoFc2hhcGUYASABKA4yGS5DT0QuVHlw",
-            "ZXMuTGV2ZWxOb2RlU2hhcGUSLgoIbWF0ZXJpYWwYAiABKA4yHC5DT0QuVHlw",
-            "ZXMuTGV2ZWxOb2RlTWF0ZXJpYWwSIwoIcG9zaXRpb24YAyABKAsyES5DT0Qu",
-            "VHlwZXMuVmVjdG9yEiAKBXNjYWxlGAQgASgLMhEuQ09ELlR5cGVzLlZlY3Rv",
-            "chInCghyb3RhdGlvbhgFIAEoCzIVLkNPRC5UeXBlcy5RdWF0ZXJuaW9uEh8K",
-            "BWNvbG9yGAYgASgLMhAuQ09ELlR5cGVzLkNvbG9yIocCChJMZXZlbE5vZGVD",
-            "cnVtYmxpbmcSKAoFc2hhcGUYASABKA4yGS5DT0QuVHlwZXMuTGV2ZWxOb2Rl",
-            "U2hhcGUSLgoIbWF0ZXJpYWwYAiABKA4yHC5DT0QuVHlwZXMuTGV2ZWxOb2Rl",
-            "TWF0ZXJpYWwSIwoIcG9zaXRpb24YAyABKAsyES5DT0QuVHlwZXMuVmVjdG9y",
-            "EiAKBXNjYWxlGAQgASgLMhEuQ09ELlR5cGVzLlZlY3RvchInCghyb3RhdGlv",
-            "bhgFIAEoCzIVLkNPRC5UeXBlcy5RdWF0ZXJuaW9uEhIKCnN0YWJsZVRpbWUY",
-            "BiABKAISEwoLcmVzcGF3blRpbWUYByABKAIiawoNTGV2ZWxOb2RlU2lnbhIj",
-            "Cghwb3NpdGlvbhgBIAEoCzIRLkNPRC5UeXBlcy5WZWN0b3ISJwoIcm90YXRp",
-            "b24YAiABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlvbhIMCgR0ZXh0GAMgASgJ",
-            "IvACCglMZXZlbE5vZGUSEAoIaXNMb2NrZWQYBiABKAgSMwoObGV2ZWxOb2Rl",
-            "U3RhcnQYASABKAsyGS5DT0QuVHlwZXMuTGV2ZWxOb2RlU3RhcnRIABI1Cg9s",
-            "ZXZlbE5vZGVGaW5pc2gYAiABKAsyGi5DT0QuVHlwZXMuTGV2ZWxOb2RlRmlu",
-            "aXNoSAASNQoPbGV2ZWxOb2RlU3RhdGljGAMgASgLMhouQ09ELlR5cGVzLkxl",
-            "dmVsTm9kZVN0YXRpY0gAEjEKDWxldmVsTm9kZVNpZ24YBCABKAsyGC5DT0Qu",
-            "VHlwZXMuTGV2ZWxOb2RlU2lnbkgAEjsKEmxldmVsTm9kZUNydW1ibGluZxgF",
-            "IAEoCzIdLkNPRC5UeXBlcy5MZXZlbE5vZGVDcnVtYmxpbmdIABIzCg5sZXZl",
-            "bE5vZGVHcm91cBgHIAEoCzIZLkNPRC5UeXBlcy5MZXZlbE5vZGVHcm91cEgA",
-            "QgkKB2NvbnRlbnQqkAEKDkxldmVsTm9kZVNoYXBlEgkKBVNUQVJUEAASCgoG",
-            "RklOSVNIEAESCAoEU0lHThACEhwKGF9fRU5EX09GX1NQRUNJQUxfUEFSVFNf",
-            "XxADEgkKBENVQkUQ6AcSCwoGU1BIRVJFEOkHEg0KCENZTElOREVSEOoHEgwK",
-            "B1BZUkFNSUQQ6wcSCgoFUFJJU00Q7AcqrQEKEUxldmVsTm9kZU1hdGVyaWFs",
-            "EgsKB0RFRkFVTFQQABINCglHUkFCQkFCTEUQARIHCgNJQ0UQAhIICgRMQVZB",
-            "EAMSCAoEV09PRBAEEg4KCkdSQVBQTEFCTEUQBRITCg9HUkFQUExBQkxFX0xB",
-            "VkEQBhIXChNHUkFCQkFCTEVfQ1JVTUJMSU5HEAcSEwoPREVGQVVMVF9DT0xP",
-            "UkVEEAgSDAoIQk9VTkNJTkcQCWIGcHJvdG8z"));
+            "bXV0aBgEIAEoAhIPCgdzdW5TaXplGAUgASgCEhIKCmZvZ0RlbnNpdHkYBiAB",
+            "KAIiqgEKDkxldmVsTm9kZUdyb3VwEiMKCHBvc2l0aW9uGAEgASgLMhEuQ09E",
+            "LlR5cGVzLlZlY3RvchIgCgVzY2FsZRgCIAEoCzIRLkNPRC5UeXBlcy5WZWN0",
+            "b3ISJwoIcm90YXRpb24YAyABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlvbhIo",
+            "CgpjaGlsZE5vZGVzGAQgAygLMhQuQ09ELlR5cGVzLkxldmVsTm9kZSJuCg5M",
+            "ZXZlbE5vZGVTdGFydBIjCghwb3NpdGlvbhgBIAEoCzIRLkNPRC5UeXBlcy5W",
+            "ZWN0b3ISJwoIcm90YXRpb24YAiABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlv",
+            "bhIOCgZyYWRpdXMYAyABKAIiRgoPTGV2ZWxOb2RlRmluaXNoEiMKCHBvc2l0",
+            "aW9uGAEgASgLMhEuQ09ELlR5cGVzLlZlY3RvchIOCgZyYWRpdXMYAiABKAIi",
+            "xgIKD0xldmVsTm9kZVN0YXRpYxIoCgVzaGFwZRgBIAEoDjIZLkNPRC5UeXBl",
+            "cy5MZXZlbE5vZGVTaGFwZRIuCghtYXRlcmlhbBgCIAEoDjIcLkNPRC5UeXBl",
+            "cy5MZXZlbE5vZGVNYXRlcmlhbBIjCghwb3NpdGlvbhgDIAEoCzIRLkNPRC5U",
+            "eXBlcy5WZWN0b3ISIAoFc2NhbGUYBCABKAsyES5DT0QuVHlwZXMuVmVjdG9y",
+            "EicKCHJvdGF0aW9uGAUgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24SIAoG",
+            "Y29sb3IxGAYgASgLMhAuQ09ELlR5cGVzLkNvbG9yEiAKBmNvbG9yMhgJIAEo",
+            "CzIQLkNPRC5UeXBlcy5Db2xvchIOCgZpc05lb24YByABKAgSFQoNaXNUcmFu",
+            "c3BhcmVudBgIIAEoCCKHAgoSTGV2ZWxOb2RlQ3J1bWJsaW5nEigKBXNoYXBl",
+            "GAEgASgOMhkuQ09ELlR5cGVzLkxldmVsTm9kZVNoYXBlEi4KCG1hdGVyaWFs",
+            "GAIgASgOMhwuQ09ELlR5cGVzLkxldmVsTm9kZU1hdGVyaWFsEiMKCHBvc2l0",
+            "aW9uGAMgASgLMhEuQ09ELlR5cGVzLlZlY3RvchIgCgVzY2FsZRgEIAEoCzIR",
+            "LkNPRC5UeXBlcy5WZWN0b3ISJwoIcm90YXRpb24YBSABKAsyFS5DT0QuVHlw",
+            "ZXMuUXVhdGVybmlvbhISCgpzdGFibGVUaW1lGAYgASgCEhMKC3Jlc3Bhd25U",
+            "aW1lGAcgASgCImsKDUxldmVsTm9kZVNpZ24SIwoIcG9zaXRpb24YASABKAsy",
+            "ES5DT0QuVHlwZXMuVmVjdG9yEicKCHJvdGF0aW9uGAIgASgLMhUuQ09ELlR5",
+            "cGVzLlF1YXRlcm5pb24SDAoEdGV4dBgDIAEoCSL5AQoQTGV2ZWxOb2RlR3Jh",
+            "dml0eRIuCgRtb2RlGAEgASgOMiAuQ09ELlR5cGVzLkxldmVsTm9kZUdyYXZp",
+            "dHkuTW9kZRIjCghwb3NpdGlvbhgCIAEoCzIRLkNPRC5UeXBlcy5WZWN0b3IS",
+            "IAoFc2NhbGUYAyABKAsyES5DT0QuVHlwZXMuVmVjdG9yEicKCHJvdGF0aW9u",
+            "GAQgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24SJAoJZGlyZWN0aW9uGAUg",
+            "ASgLMhEuQ09ELlR5cGVzLlZlY3RvciIfCgRNb2RlEgsKB0RFRkFVTFQQABIK",
+            "CgZOT0xFR1MQASJmChZMZXZlbE5vZGVMb2JieVRlcm1pbmFsEiMKCHBvc2l0",
+            "aW9uGAIgASgLMhEuQ09ELlR5cGVzLlZlY3RvchInCghyb3RhdGlvbhgEIAEo",
+            "CzIVLkNPRC5UeXBlcy5RdWF0ZXJuaW9uImwKDkFuaW1hdGlvbkZyYW1lEgwK",
+            "BHRpbWUYASABKAISIwoIcG9zaXRpb24YAiABKAsyES5DT0QuVHlwZXMuVmVj",
+            "dG9yEicKCHJvdGF0aW9uGAMgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24i",
+            "rgEKCUFuaW1hdGlvbhIMCgRuYW1lGAEgASgJEikKBmZyYW1lcxgCIAMoCzIZ",
+            "LkNPRC5UeXBlcy5BbmltYXRpb25GcmFtZRIxCglkaXJlY3Rpb24YAyABKA4y",
+            "Hi5DT0QuVHlwZXMuQW5pbWF0aW9uLkRpcmVjdGlvbhINCgVzcGVlZBgEIAEo",
+            "AiImCglEaXJlY3Rpb24SCwoHUkVTVEFSVBAAEgwKCFBJTkdQT05HEAEimAQK",
+            "CUxldmVsTm9kZRIQCghpc0xvY2tlZBgGIAEoCBIzCg5sZXZlbE5vZGVTdGFy",
+            "dBgBIAEoCzIZLkNPRC5UeXBlcy5MZXZlbE5vZGVTdGFydEgAEjUKD2xldmVs",
+            "Tm9kZUZpbmlzaBgCIAEoCzIaLkNPRC5UeXBlcy5MZXZlbE5vZGVGaW5pc2hI",
+            "ABI1Cg9sZXZlbE5vZGVTdGF0aWMYAyABKAsyGi5DT0QuVHlwZXMuTGV2ZWxO",
+            "b2RlU3RhdGljSAASMQoNbGV2ZWxOb2RlU2lnbhgEIAEoCzIYLkNPRC5UeXBl",
+            "cy5MZXZlbE5vZGVTaWduSAASOwoSbGV2ZWxOb2RlQ3J1bWJsaW5nGAUgASgL",
+            "Mh0uQ09ELlR5cGVzLkxldmVsTm9kZUNydW1ibGluZ0gAEjMKDmxldmVsTm9k",
+            "ZUdyb3VwGAcgASgLMhkuQ09ELlR5cGVzLkxldmVsTm9kZUdyb3VwSAASNwoQ",
+            "bGV2ZWxOb2RlR3Jhdml0eRgIIAEoCzIbLkNPRC5UeXBlcy5MZXZlbE5vZGVH",
+            "cmF2aXR5SAASQwoWbGV2ZWxOb2RlTG9iYnlUZXJtaW5hbBgJIAEoCzIhLkNP",
+            "RC5UeXBlcy5MZXZlbE5vZGVMb2JieVRlcm1pbmFsSAASKAoKYW5pbWF0aW9u",
+            "cxgPIAMoCzIULkNPRC5UeXBlcy5BbmltYXRpb25CCQoHY29udGVudCq7AQoO",
+            "TGV2ZWxOb2RlU2hhcGUSCQoFU1RBUlQQABIKCgZGSU5JU0gQARIICgRTSUdO",
+            "EAISCwoHR1JBVklUWRADEhEKDUxPQkJZVEVSTUlOQUwQBBIcChhfX0VORF9P",
+            "Rl9TUEVDSUFMX1BBUlRTX18QBRIJCgRDVUJFEOgHEgsKBlNQSEVSRRDpBxIN",
+            "CghDWUxJTkRFUhDqBxIMCgdQWVJBTUlEEOsHEgoKBVBSSVNNEOwHEgkKBENP",
+            "TkUQ7QcqtwEKEUxldmVsTm9kZU1hdGVyaWFsEgsKB0RFRkFVTFQQABINCglH",
+            "UkFCQkFCTEUQARIHCgNJQ0UQAhIICgRMQVZBEAMSCAoEV09PRBAEEg4KCkdS",
+            "QVBQTEFCTEUQBRITCg9HUkFQUExBQkxFX0xBVkEQBhIXChNHUkFCQkFCTEVf",
+            "Q1JVTUJMSU5HEAcSEwoPREVGQVVMVF9DT0xPUkVEEAgSDAoIQk9VTkNJTkcQ",
+            "CRIICgRTTk9XEApiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::COD.Types.LevelNodeShape), typeof(global::COD.Types.LevelNodeMaterial), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Vector), global::COD.Types.Vector.Parser, new[]{ "X", "Y", "Z" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Quaternion), global::COD.Types.Quaternion.Parser, new[]{ "X", "Y", "Z", "W" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Color), global::COD.Types.Color.Parser, new[]{ "R", "G", "B", "A" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.AmbienceSettings), global::COD.Types.AmbienceSettings.Parser, new[]{ "SkyZenithColor", "SkyHorizonColor", "SunAltitude", "SunAzimuth", "SunSize", "FogDDensity" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.AmbienceSettings), global::COD.Types.AmbienceSettings.Parser, new[]{ "SkyZenithColor", "SkyHorizonColor", "SunAltitude", "SunAzimuth", "SunSize", "FogDensity" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeGroup), global::COD.Types.LevelNodeGroup.Parser, new[]{ "Position", "Scale", "Rotation", "ChildNodes" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeStart), global::COD.Types.LevelNodeStart.Parser, new[]{ "Position", "Rotation", "Radius" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeFinish), global::COD.Types.LevelNodeFinish.Parser, new[]{ "Position", "Radius" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeStatic), global::COD.Types.LevelNodeStatic.Parser, new[]{ "Shape", "Material", "Position", "Scale", "Rotation", "Color" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeStatic), global::COD.Types.LevelNodeStatic.Parser, new[]{ "Shape", "Material", "Position", "Scale", "Rotation", "Color1", "Color2", "IsNeon", "IsTransparent" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeCrumbling), global::COD.Types.LevelNodeCrumbling.Parser, new[]{ "Shape", "Material", "Position", "Scale", "Rotation", "StableTime", "RespawnTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeSign), global::COD.Types.LevelNodeSign.Parser, new[]{ "Position", "Rotation", "Text" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNode), global::COD.Types.LevelNode.Parser, new[]{ "IsLocked", "LevelNodeStart", "LevelNodeFinish", "LevelNodeStatic", "LevelNodeSign", "LevelNodeCrumbling", "LevelNodeGroup" }, new[]{ "Content" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeGravity), global::COD.Types.LevelNodeGravity.Parser, new[]{ "Mode", "Position", "Scale", "Rotation", "Direction" }, null, new[]{ typeof(global::COD.Types.LevelNodeGravity.Types.Mode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeLobbyTerminal), global::COD.Types.LevelNodeLobbyTerminal.Parser, new[]{ "Position", "Rotation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.AnimationFrame), global::COD.Types.AnimationFrame.Parser, new[]{ "Time", "Position", "Rotation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Animation), global::COD.Types.Animation.Parser, new[]{ "Name", "Frames", "Direction", "Speed" }, null, new[]{ typeof(global::COD.Types.Animation.Types.Direction) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNode), global::COD.Types.LevelNode.Parser, new[]{ "IsLocked", "LevelNodeStart", "LevelNodeFinish", "LevelNodeStatic", "LevelNodeSign", "LevelNodeCrumbling", "LevelNodeGroup", "LevelNodeGravity", "LevelNodeLobbyTerminal", "Animations" }, new[]{ "Content" }, null, null, null)
           }));
     }
     #endregion
@@ -94,12 +119,15 @@ namespace COD.Types {
     [pbr::OriginalName("START")] Start = 0,
     [pbr::OriginalName("FINISH")] Finish = 1,
     [pbr::OriginalName("SIGN")] Sign = 2,
-    [pbr::OriginalName("__END_OF_SPECIAL_PARTS__")] EndOfSpecialParts = 3,
+    [pbr::OriginalName("GRAVITY")] Gravity = 3,
+    [pbr::OriginalName("LOBBYTERMINAL")] Lobbyterminal = 4,
+    [pbr::OriginalName("__END_OF_SPECIAL_PARTS__")] EndOfSpecialParts = 5,
     [pbr::OriginalName("CUBE")] Cube = 1000,
     [pbr::OriginalName("SPHERE")] Sphere = 1001,
     [pbr::OriginalName("CYLINDER")] Cylinder = 1002,
     [pbr::OriginalName("PYRAMID")] Pyramid = 1003,
     [pbr::OriginalName("PRISM")] Prism = 1004,
+    [pbr::OriginalName("CONE")] Cone = 1005,
   }
 
   public enum LevelNodeMaterial {
@@ -113,6 +141,7 @@ namespace COD.Types {
     [pbr::OriginalName("GRABBABLE_CRUMBLING")] GrabbableCrumbling = 7,
     [pbr::OriginalName("DEFAULT_COLORED")] DefaultColored = 8,
     [pbr::OriginalName("BOUNCING")] Bouncing = 9,
+    [pbr::OriginalName("SNOW")] Snow = 10,
   }
 
   #endregion
@@ -956,7 +985,7 @@ namespace COD.Types {
       sunAltitude_ = other.sunAltitude_;
       sunAzimuth_ = other.sunAzimuth_;
       sunSize_ = other.sunSize_;
-      fogDDensity_ = other.fogDDensity_;
+      fogDensity_ = other.fogDensity_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1020,14 +1049,14 @@ namespace COD.Types {
       }
     }
 
-    /// <summary>Field number for the "fogDDensity" field.</summary>
-    public const int FogDDensityFieldNumber = 6;
-    private float fogDDensity_;
+    /// <summary>Field number for the "fogDensity" field.</summary>
+    public const int FogDensityFieldNumber = 6;
+    private float fogDensity_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public float FogDDensity {
-      get { return fogDDensity_; }
+    public float FogDensity {
+      get { return fogDensity_; }
       set {
-        fogDDensity_ = value;
+        fogDensity_ = value;
       }
     }
 
@@ -1049,7 +1078,7 @@ namespace COD.Types {
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SunAltitude, other.SunAltitude)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SunAzimuth, other.SunAzimuth)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(SunSize, other.SunSize)) return false;
-      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FogDDensity, other.FogDDensity)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(FogDensity, other.FogDensity)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1061,7 +1090,7 @@ namespace COD.Types {
       if (SunAltitude != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SunAltitude);
       if (SunAzimuth != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SunAzimuth);
       if (SunSize != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(SunSize);
-      if (FogDDensity != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FogDDensity);
+      if (FogDensity != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(FogDensity);
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1098,9 +1127,9 @@ namespace COD.Types {
         output.WriteRawTag(45);
         output.WriteFloat(SunSize);
       }
-      if (FogDDensity != 0F) {
+      if (FogDensity != 0F) {
         output.WriteRawTag(53);
-        output.WriteFloat(FogDDensity);
+        output.WriteFloat(FogDensity);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1131,9 +1160,9 @@ namespace COD.Types {
         output.WriteRawTag(45);
         output.WriteFloat(SunSize);
       }
-      if (FogDDensity != 0F) {
+      if (FogDensity != 0F) {
         output.WriteRawTag(53);
-        output.WriteFloat(FogDDensity);
+        output.WriteFloat(FogDensity);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1159,7 +1188,7 @@ namespace COD.Types {
       if (SunSize != 0F) {
         size += 1 + 4;
       }
-      if (FogDDensity != 0F) {
+      if (FogDensity != 0F) {
         size += 1 + 4;
       }
       if (_unknownFields != null) {
@@ -1194,8 +1223,8 @@ namespace COD.Types {
       if (other.SunSize != 0F) {
         SunSize = other.SunSize;
       }
-      if (other.FogDDensity != 0F) {
-        FogDDensity = other.FogDDensity;
+      if (other.FogDensity != 0F) {
+        FogDensity = other.FogDensity;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1238,7 +1267,7 @@ namespace COD.Types {
             break;
           }
           case 53: {
-            FogDDensity = input.ReadFloat();
+            FogDensity = input.ReadFloat();
             break;
           }
         }
@@ -1282,7 +1311,7 @@ namespace COD.Types {
             break;
           }
           case 53: {
-            FogDDensity = input.ReadFloat();
+            FogDensity = input.ReadFloat();
             break;
           }
         }
@@ -2110,7 +2139,10 @@ namespace COD.Types {
       position_ = other.position_ != null ? other.position_.Clone() : null;
       scale_ = other.scale_ != null ? other.scale_.Clone() : null;
       rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
-      color_ = other.color_ != null ? other.color_.Clone() : null;
+      color1_ = other.color1_ != null ? other.color1_.Clone() : null;
+      color2_ = other.color2_ != null ? other.color2_.Clone() : null;
+      isNeon_ = other.isNeon_;
+      isTransparent_ = other.isTransparent_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -2180,14 +2212,50 @@ namespace COD.Types {
       }
     }
 
-    /// <summary>Field number for the "color" field.</summary>
-    public const int ColorFieldNumber = 6;
-    private global::COD.Types.Color color_;
+    /// <summary>Field number for the "color1" field.</summary>
+    public const int Color1FieldNumber = 6;
+    private global::COD.Types.Color color1_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    public global::COD.Types.Color Color {
-      get { return color_; }
+    public global::COD.Types.Color Color1 {
+      get { return color1_; }
       set {
-        color_ = value;
+        color1_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "color2" field.</summary>
+    public const int Color2FieldNumber = 9;
+    private global::COD.Types.Color color2_;
+    /// <summary>
+    ///Used for colored lava blocks, blending between the two colors, but also used for specularity on colored default blocks!
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Color Color2 {
+      get { return color2_; }
+      set {
+        color2_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isNeon" field.</summary>
+    public const int IsNeonFieldNumber = 7;
+    private bool isNeon_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsNeon {
+      get { return isNeon_; }
+      set {
+        isNeon_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isTransparent" field.</summary>
+    public const int IsTransparentFieldNumber = 8;
+    private bool isTransparent_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsTransparent {
+      get { return isTransparent_; }
+      set {
+        isTransparent_ = value;
       }
     }
 
@@ -2209,7 +2277,10 @@ namespace COD.Types {
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Scale, other.Scale)) return false;
       if (!object.Equals(Rotation, other.Rotation)) return false;
-      if (!object.Equals(Color, other.Color)) return false;
+      if (!object.Equals(Color1, other.Color1)) return false;
+      if (!object.Equals(Color2, other.Color2)) return false;
+      if (IsNeon != other.IsNeon) return false;
+      if (IsTransparent != other.IsTransparent) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -2221,7 +2292,10 @@ namespace COD.Types {
       if (position_ != null) hash ^= Position.GetHashCode();
       if (scale_ != null) hash ^= Scale.GetHashCode();
       if (rotation_ != null) hash ^= Rotation.GetHashCode();
-      if (color_ != null) hash ^= Color.GetHashCode();
+      if (color1_ != null) hash ^= Color1.GetHashCode();
+      if (color2_ != null) hash ^= Color2.GetHashCode();
+      if (IsNeon != false) hash ^= IsNeon.GetHashCode();
+      if (IsTransparent != false) hash ^= IsTransparent.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -2258,9 +2332,21 @@ namespace COD.Types {
         output.WriteRawTag(42);
         output.WriteMessage(Rotation);
       }
-      if (color_ != null) {
+      if (color1_ != null) {
         output.WriteRawTag(50);
-        output.WriteMessage(Color);
+        output.WriteMessage(Color1);
+      }
+      if (IsNeon != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(IsNeon);
+      }
+      if (IsTransparent != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(IsTransparent);
+      }
+      if (color2_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Color2);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -2291,9 +2377,21 @@ namespace COD.Types {
         output.WriteRawTag(42);
         output.WriteMessage(Rotation);
       }
-      if (color_ != null) {
+      if (color1_ != null) {
         output.WriteRawTag(50);
-        output.WriteMessage(Color);
+        output.WriteMessage(Color1);
+      }
+      if (IsNeon != false) {
+        output.WriteRawTag(56);
+        output.WriteBool(IsNeon);
+      }
+      if (IsTransparent != false) {
+        output.WriteRawTag(64);
+        output.WriteBool(IsTransparent);
+      }
+      if (color2_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(Color2);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -2319,8 +2417,17 @@ namespace COD.Types {
       if (rotation_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
       }
-      if (color_ != null) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Color);
+      if (color1_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Color1);
+      }
+      if (color2_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Color2);
+      }
+      if (IsNeon != false) {
+        size += 1 + 1;
+      }
+      if (IsTransparent != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -2357,11 +2464,23 @@ namespace COD.Types {
         }
         Rotation.MergeFrom(other.Rotation);
       }
-      if (other.color_ != null) {
-        if (color_ == null) {
-          Color = new global::COD.Types.Color();
+      if (other.color1_ != null) {
+        if (color1_ == null) {
+          Color1 = new global::COD.Types.Color();
         }
-        Color.MergeFrom(other.Color);
+        Color1.MergeFrom(other.Color1);
+      }
+      if (other.color2_ != null) {
+        if (color2_ == null) {
+          Color2 = new global::COD.Types.Color();
+        }
+        Color2.MergeFrom(other.Color2);
+      }
+      if (other.IsNeon != false) {
+        IsNeon = other.IsNeon;
+      }
+      if (other.IsTransparent != false) {
+        IsTransparent = other.IsTransparent;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -2407,10 +2526,25 @@ namespace COD.Types {
             break;
           }
           case 50: {
-            if (color_ == null) {
-              Color = new global::COD.Types.Color();
+            if (color1_ == null) {
+              Color1 = new global::COD.Types.Color();
             }
-            input.ReadMessage(Color);
+            input.ReadMessage(Color1);
+            break;
+          }
+          case 56: {
+            IsNeon = input.ReadBool();
+            break;
+          }
+          case 64: {
+            IsTransparent = input.ReadBool();
+            break;
+          }
+          case 74: {
+            if (color2_ == null) {
+              Color2 = new global::COD.Types.Color();
+            }
+            input.ReadMessage(Color2);
             break;
           }
         }
@@ -2457,10 +2591,25 @@ namespace COD.Types {
             break;
           }
           case 50: {
-            if (color_ == null) {
-              Color = new global::COD.Types.Color();
+            if (color1_ == null) {
+              Color1 = new global::COD.Types.Color();
             }
-            input.ReadMessage(Color);
+            input.ReadMessage(Color1);
+            break;
+          }
+          case 56: {
+            IsNeon = input.ReadBool();
+            break;
+          }
+          case 64: {
+            IsTransparent = input.ReadBool();
+            break;
+          }
+          case 74: {
+            if (color2_ == null) {
+              Color2 = new global::COD.Types.Color();
+            }
+            input.ReadMessage(Color2);
             break;
           }
         }
@@ -3153,6 +3302,1148 @@ namespace COD.Types {
 
   }
 
+  public sealed partial class LevelNodeGravity : pb::IMessage<LevelNodeGravity>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LevelNodeGravity> _parser = new pb::MessageParser<LevelNodeGravity>(() => new LevelNodeGravity());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LevelNodeGravity> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[10]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeGravity() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeGravity(LevelNodeGravity other) : this() {
+      mode_ = other.mode_;
+      position_ = other.position_ != null ? other.position_.Clone() : null;
+      scale_ = other.scale_ != null ? other.scale_.Clone() : null;
+      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
+      direction_ = other.direction_ != null ? other.direction_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeGravity Clone() {
+      return new LevelNodeGravity(this);
+    }
+
+    /// <summary>Field number for the "mode" field.</summary>
+    public const int ModeFieldNumber = 1;
+    private global::COD.Types.LevelNodeGravity.Types.Mode mode_ = global::COD.Types.LevelNodeGravity.Types.Mode.Default;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.LevelNodeGravity.Types.Mode Mode {
+      get { return mode_; }
+      set {
+        mode_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 2;
+    private global::COD.Types.Vector position_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Position {
+      get { return position_; }
+      set {
+        position_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "scale" field.</summary>
+    public const int ScaleFieldNumber = 3;
+    private global::COD.Types.Vector scale_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Scale {
+      get { return scale_; }
+      set {
+        scale_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rotation" field.</summary>
+    public const int RotationFieldNumber = 4;
+    private global::COD.Types.Quaternion rotation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Quaternion Rotation {
+      get { return rotation_; }
+      set {
+        rotation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "direction" field.</summary>
+    public const int DirectionFieldNumber = 5;
+    private global::COD.Types.Vector direction_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Direction {
+      get { return direction_; }
+      set {
+        direction_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LevelNodeGravity);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LevelNodeGravity other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Mode != other.Mode) return false;
+      if (!object.Equals(Position, other.Position)) return false;
+      if (!object.Equals(Scale, other.Scale)) return false;
+      if (!object.Equals(Rotation, other.Rotation)) return false;
+      if (!object.Equals(Direction, other.Direction)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Mode != global::COD.Types.LevelNodeGravity.Types.Mode.Default) hash ^= Mode.GetHashCode();
+      if (position_ != null) hash ^= Position.GetHashCode();
+      if (scale_ != null) hash ^= Scale.GetHashCode();
+      if (rotation_ != null) hash ^= Rotation.GetHashCode();
+      if (direction_ != null) hash ^= Direction.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Mode != global::COD.Types.LevelNodeGravity.Types.Mode.Default) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Mode);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Position);
+      }
+      if (scale_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Scale);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Rotation);
+      }
+      if (direction_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Direction);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Mode != global::COD.Types.LevelNodeGravity.Types.Mode.Default) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Mode);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Position);
+      }
+      if (scale_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Scale);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Rotation);
+      }
+      if (direction_ != null) {
+        output.WriteRawTag(42);
+        output.WriteMessage(Direction);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Mode != global::COD.Types.LevelNodeGravity.Types.Mode.Default) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Mode);
+      }
+      if (position_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      }
+      if (scale_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Scale);
+      }
+      if (rotation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
+      }
+      if (direction_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Direction);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LevelNodeGravity other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Mode != global::COD.Types.LevelNodeGravity.Types.Mode.Default) {
+        Mode = other.Mode;
+      }
+      if (other.position_ != null) {
+        if (position_ == null) {
+          Position = new global::COD.Types.Vector();
+        }
+        Position.MergeFrom(other.Position);
+      }
+      if (other.scale_ != null) {
+        if (scale_ == null) {
+          Scale = new global::COD.Types.Vector();
+        }
+        Scale.MergeFrom(other.Scale);
+      }
+      if (other.rotation_ != null) {
+        if (rotation_ == null) {
+          Rotation = new global::COD.Types.Quaternion();
+        }
+        Rotation.MergeFrom(other.Rotation);
+      }
+      if (other.direction_ != null) {
+        if (direction_ == null) {
+          Direction = new global::COD.Types.Vector();
+        }
+        Direction.MergeFrom(other.Direction);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Mode = (global::COD.Types.LevelNodeGravity.Types.Mode) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 26: {
+            if (scale_ == null) {
+              Scale = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Scale);
+            break;
+          }
+          case 34: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+          case 42: {
+            if (direction_ == null) {
+              Direction = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Direction);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Mode = (global::COD.Types.LevelNodeGravity.Types.Mode) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 26: {
+            if (scale_ == null) {
+              Scale = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Scale);
+            break;
+          }
+          case 34: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+          case 42: {
+            if (direction_ == null) {
+              Direction = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Direction);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the LevelNodeGravity message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Mode {
+        [pbr::OriginalName("DEFAULT")] Default = 0,
+        /// <summary>
+        ///gtag like movement with the head on the ground, also no leg collisions with lava
+        /// </summary>
+        [pbr::OriginalName("NOLEGS")] Nolegs = 1,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class LevelNodeLobbyTerminal : pb::IMessage<LevelNodeLobbyTerminal>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LevelNodeLobbyTerminal> _parser = new pb::MessageParser<LevelNodeLobbyTerminal>(() => new LevelNodeLobbyTerminal());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LevelNodeLobbyTerminal> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[11]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeLobbyTerminal() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeLobbyTerminal(LevelNodeLobbyTerminal other) : this() {
+      position_ = other.position_ != null ? other.position_.Clone() : null;
+      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeLobbyTerminal Clone() {
+      return new LevelNodeLobbyTerminal(this);
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 2;
+    private global::COD.Types.Vector position_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Position {
+      get { return position_; }
+      set {
+        position_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rotation" field.</summary>
+    public const int RotationFieldNumber = 4;
+    private global::COD.Types.Quaternion rotation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Quaternion Rotation {
+      get { return rotation_; }
+      set {
+        rotation_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LevelNodeLobbyTerminal);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LevelNodeLobbyTerminal other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Position, other.Position)) return false;
+      if (!object.Equals(Rotation, other.Rotation)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (position_ != null) hash ^= Position.GetHashCode();
+      if (rotation_ != null) hash ^= Rotation.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (position_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Position);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Rotation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (position_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Position);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Rotation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (position_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      }
+      if (rotation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LevelNodeLobbyTerminal other) {
+      if (other == null) {
+        return;
+      }
+      if (other.position_ != null) {
+        if (position_ == null) {
+          Position = new global::COD.Types.Vector();
+        }
+        Position.MergeFrom(other.Position);
+      }
+      if (other.rotation_ != null) {
+        if (rotation_ == null) {
+          Rotation = new global::COD.Types.Quaternion();
+        }
+        Rotation.MergeFrom(other.Rotation);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 18: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 34: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 18: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 34: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class AnimationFrame : pb::IMessage<AnimationFrame>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<AnimationFrame> _parser = new pb::MessageParser<AnimationFrame>(() => new AnimationFrame());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<AnimationFrame> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[12]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AnimationFrame() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AnimationFrame(AnimationFrame other) : this() {
+      time_ = other.time_;
+      position_ = other.position_ != null ? other.position_.Clone() : null;
+      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public AnimationFrame Clone() {
+      return new AnimationFrame(this);
+    }
+
+    /// <summary>Field number for the "time" field.</summary>
+    public const int TimeFieldNumber = 1;
+    private float time_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Time {
+      get { return time_; }
+      set {
+        time_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 2;
+    private global::COD.Types.Vector position_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Position {
+      get { return position_; }
+      set {
+        position_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rotation" field.</summary>
+    public const int RotationFieldNumber = 3;
+    private global::COD.Types.Quaternion rotation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Quaternion Rotation {
+      get { return rotation_; }
+      set {
+        rotation_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as AnimationFrame);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(AnimationFrame other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Time, other.Time)) return false;
+      if (!object.Equals(Position, other.Position)) return false;
+      if (!object.Equals(Rotation, other.Rotation)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Time != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Time);
+      if (position_ != null) hash ^= Position.GetHashCode();
+      if (rotation_ != null) hash ^= Rotation.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Time != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(Time);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Position);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Rotation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Time != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(Time);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Position);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Rotation);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Time != 0F) {
+        size += 1 + 4;
+      }
+      if (position_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      }
+      if (rotation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(AnimationFrame other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Time != 0F) {
+        Time = other.Time;
+      }
+      if (other.position_ != null) {
+        if (position_ == null) {
+          Position = new global::COD.Types.Vector();
+        }
+        Position.MergeFrom(other.Position);
+      }
+      if (other.rotation_ != null) {
+        if (rotation_ == null) {
+          Rotation = new global::COD.Types.Quaternion();
+        }
+        Rotation.MergeFrom(other.Rotation);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 13: {
+            Time = input.ReadFloat();
+            break;
+          }
+          case 18: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 26: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 13: {
+            Time = input.ReadFloat();
+            break;
+          }
+          case 18: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 26: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class Animation : pb::IMessage<Animation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Animation> _parser = new pb::MessageParser<Animation>(() => new Animation());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Animation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Animation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Animation(Animation other) : this() {
+      name_ = other.name_;
+      frames_ = other.frames_.Clone();
+      direction_ = other.direction_;
+      speed_ = other.speed_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Animation Clone() {
+      return new Animation(this);
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 1;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "frames" field.</summary>
+    public const int FramesFieldNumber = 2;
+    private static readonly pb::FieldCodec<global::COD.Types.AnimationFrame> _repeated_frames_codec
+        = pb::FieldCodec.ForMessage(18, global::COD.Types.AnimationFrame.Parser);
+    private readonly pbc::RepeatedField<global::COD.Types.AnimationFrame> frames_ = new pbc::RepeatedField<global::COD.Types.AnimationFrame>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::COD.Types.AnimationFrame> Frames {
+      get { return frames_; }
+    }
+
+    /// <summary>Field number for the "direction" field.</summary>
+    public const int DirectionFieldNumber = 3;
+    private global::COD.Types.Animation.Types.Direction direction_ = global::COD.Types.Animation.Types.Direction.Restart;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Animation.Types.Direction Direction {
+      get { return direction_; }
+      set {
+        direction_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "speed" field.</summary>
+    public const int SpeedFieldNumber = 4;
+    private float speed_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Speed {
+      get { return speed_; }
+      set {
+        speed_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Animation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Animation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Name != other.Name) return false;
+      if(!frames_.Equals(other.frames_)) return false;
+      if (Direction != other.Direction) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Speed, other.Speed)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      hash ^= frames_.GetHashCode();
+      if (Direction != global::COD.Types.Animation.Types.Direction.Restart) hash ^= Direction.GetHashCode();
+      if (Speed != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Speed);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      frames_.WriteTo(output, _repeated_frames_codec);
+      if (Direction != global::COD.Types.Animation.Types.Direction.Restart) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Direction);
+      }
+      if (Speed != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Speed);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Name.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(Name);
+      }
+      frames_.WriteTo(ref output, _repeated_frames_codec);
+      if (Direction != global::COD.Types.Animation.Types.Direction.Restart) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Direction);
+      }
+      if (Speed != 0F) {
+        output.WriteRawTag(37);
+        output.WriteFloat(Speed);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      size += frames_.CalculateSize(_repeated_frames_codec);
+      if (Direction != global::COD.Types.Animation.Types.Direction.Restart) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Direction);
+      }
+      if (Speed != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Animation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      frames_.Add(other.frames_);
+      if (other.Direction != global::COD.Types.Animation.Types.Direction.Restart) {
+        Direction = other.Direction;
+      }
+      if (other.Speed != 0F) {
+        Speed = other.Speed;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            frames_.AddEntriesFrom(input, _repeated_frames_codec);
+            break;
+          }
+          case 24: {
+            Direction = (global::COD.Types.Animation.Types.Direction) input.ReadEnum();
+            break;
+          }
+          case 37: {
+            Speed = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            Name = input.ReadString();
+            break;
+          }
+          case 18: {
+            frames_.AddEntriesFrom(ref input, _repeated_frames_codec);
+            break;
+          }
+          case 24: {
+            Direction = (global::COD.Types.Animation.Types.Direction) input.ReadEnum();
+            break;
+          }
+          case 37: {
+            Speed = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the Animation message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Direction {
+        /// <summary>
+        ///After the last frame, jump back to the first frame
+        /// </summary>
+        [pbr::OriginalName("RESTART")] Restart = 0,
+        /// <summary>
+        ///After the last frame, play the animation backwards
+        /// </summary>
+        [pbr::OriginalName("PINGPONG")] Pingpong = 1,
+      }
+
+    }
+    #endregion
+
+  }
+
   public sealed partial class LevelNode : pb::IMessage<LevelNode>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3165,7 +4456,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[10]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[14]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3183,6 +4474,7 @@ namespace COD.Types {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public LevelNode(LevelNode other) : this() {
       isLocked_ = other.isLocked_;
+      animations_ = other.animations_.Clone();
       switch (other.ContentCase) {
         case ContentOneofCase.LevelNodeStart:
           LevelNodeStart = other.LevelNodeStart.Clone();
@@ -3201,6 +4493,12 @@ namespace COD.Types {
           break;
         case ContentOneofCase.LevelNodeGroup:
           LevelNodeGroup = other.LevelNodeGroup.Clone();
+          break;
+        case ContentOneofCase.LevelNodeGravity:
+          LevelNodeGravity = other.LevelNodeGravity.Clone();
+          break;
+        case ContentOneofCase.LevelNodeLobbyTerminal:
+          LevelNodeLobbyTerminal = other.LevelNodeLobbyTerminal.Clone();
           break;
       }
 
@@ -3289,6 +4587,41 @@ namespace COD.Types {
       }
     }
 
+    /// <summary>Field number for the "levelNodeGravity" field.</summary>
+    public const int LevelNodeGravityFieldNumber = 8;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.LevelNodeGravity LevelNodeGravity {
+      get { return contentCase_ == ContentOneofCase.LevelNodeGravity ? (global::COD.Types.LevelNodeGravity) content_ : null; }
+      set {
+        content_ = value;
+        contentCase_ = value == null ? ContentOneofCase.None : ContentOneofCase.LevelNodeGravity;
+      }
+    }
+
+    /// <summary>Field number for the "levelNodeLobbyTerminal" field.</summary>
+    public const int LevelNodeLobbyTerminalFieldNumber = 9;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.LevelNodeLobbyTerminal LevelNodeLobbyTerminal {
+      get { return contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal ? (global::COD.Types.LevelNodeLobbyTerminal) content_ : null; }
+      set {
+        content_ = value;
+        contentCase_ = value == null ? ContentOneofCase.None : ContentOneofCase.LevelNodeLobbyTerminal;
+      }
+    }
+
+    /// <summary>Field number for the "animations" field.</summary>
+    public const int AnimationsFieldNumber = 15;
+    private static readonly pb::FieldCodec<global::COD.Types.Animation> _repeated_animations_codec
+        = pb::FieldCodec.ForMessage(122, global::COD.Types.Animation.Parser);
+    private readonly pbc::RepeatedField<global::COD.Types.Animation> animations_ = new pbc::RepeatedField<global::COD.Types.Animation>();
+    /// <summary>
+    ///A level node can have any number (might limit it in the UI) of named animations, if groups are involved every block that is part of the same animation should have an animation with the same name
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::COD.Types.Animation> Animations {
+      get { return animations_; }
+    }
+
     private object content_;
     /// <summary>Enum of possible cases for the "content" oneof.</summary>
     public enum ContentOneofCase {
@@ -3299,6 +4632,8 @@ namespace COD.Types {
       LevelNodeSign = 4,
       LevelNodeCrumbling = 5,
       LevelNodeGroup = 7,
+      LevelNodeGravity = 8,
+      LevelNodeLobbyTerminal = 9,
     }
     private ContentOneofCase contentCase_ = ContentOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3332,6 +4667,9 @@ namespace COD.Types {
       if (!object.Equals(LevelNodeSign, other.LevelNodeSign)) return false;
       if (!object.Equals(LevelNodeCrumbling, other.LevelNodeCrumbling)) return false;
       if (!object.Equals(LevelNodeGroup, other.LevelNodeGroup)) return false;
+      if (!object.Equals(LevelNodeGravity, other.LevelNodeGravity)) return false;
+      if (!object.Equals(LevelNodeLobbyTerminal, other.LevelNodeLobbyTerminal)) return false;
+      if(!animations_.Equals(other.animations_)) return false;
       if (ContentCase != other.ContentCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -3346,6 +4684,9 @@ namespace COD.Types {
       if (contentCase_ == ContentOneofCase.LevelNodeSign) hash ^= LevelNodeSign.GetHashCode();
       if (contentCase_ == ContentOneofCase.LevelNodeCrumbling) hash ^= LevelNodeCrumbling.GetHashCode();
       if (contentCase_ == ContentOneofCase.LevelNodeGroup) hash ^= LevelNodeGroup.GetHashCode();
+      if (contentCase_ == ContentOneofCase.LevelNodeGravity) hash ^= LevelNodeGravity.GetHashCode();
+      if (contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal) hash ^= LevelNodeLobbyTerminal.GetHashCode();
+      hash ^= animations_.GetHashCode();
       hash ^= (int) contentCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -3391,6 +4732,15 @@ namespace COD.Types {
         output.WriteRawTag(58);
         output.WriteMessage(LevelNodeGroup);
       }
+      if (contentCase_ == ContentOneofCase.LevelNodeGravity) {
+        output.WriteRawTag(66);
+        output.WriteMessage(LevelNodeGravity);
+      }
+      if (contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal) {
+        output.WriteRawTag(74);
+        output.WriteMessage(LevelNodeLobbyTerminal);
+      }
+      animations_.WriteTo(output, _repeated_animations_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -3428,6 +4778,15 @@ namespace COD.Types {
         output.WriteRawTag(58);
         output.WriteMessage(LevelNodeGroup);
       }
+      if (contentCase_ == ContentOneofCase.LevelNodeGravity) {
+        output.WriteRawTag(66);
+        output.WriteMessage(LevelNodeGravity);
+      }
+      if (contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal) {
+        output.WriteRawTag(74);
+        output.WriteMessage(LevelNodeLobbyTerminal);
+      }
+      animations_.WriteTo(ref output, _repeated_animations_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -3458,6 +4817,13 @@ namespace COD.Types {
       if (contentCase_ == ContentOneofCase.LevelNodeGroup) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LevelNodeGroup);
       }
+      if (contentCase_ == ContentOneofCase.LevelNodeGravity) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LevelNodeGravity);
+      }
+      if (contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LevelNodeLobbyTerminal);
+      }
+      size += animations_.CalculateSize(_repeated_animations_codec);
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -3472,6 +4838,7 @@ namespace COD.Types {
       if (other.IsLocked != false) {
         IsLocked = other.IsLocked;
       }
+      animations_.Add(other.animations_);
       switch (other.ContentCase) {
         case ContentOneofCase.LevelNodeStart:
           if (LevelNodeStart == null) {
@@ -3508,6 +4875,18 @@ namespace COD.Types {
             LevelNodeGroup = new global::COD.Types.LevelNodeGroup();
           }
           LevelNodeGroup.MergeFrom(other.LevelNodeGroup);
+          break;
+        case ContentOneofCase.LevelNodeGravity:
+          if (LevelNodeGravity == null) {
+            LevelNodeGravity = new global::COD.Types.LevelNodeGravity();
+          }
+          LevelNodeGravity.MergeFrom(other.LevelNodeGravity);
+          break;
+        case ContentOneofCase.LevelNodeLobbyTerminal:
+          if (LevelNodeLobbyTerminal == null) {
+            LevelNodeLobbyTerminal = new global::COD.Types.LevelNodeLobbyTerminal();
+          }
+          LevelNodeLobbyTerminal.MergeFrom(other.LevelNodeLobbyTerminal);
           break;
       }
 
@@ -3583,6 +4962,28 @@ namespace COD.Types {
             LevelNodeGroup = subBuilder;
             break;
           }
+          case 66: {
+            global::COD.Types.LevelNodeGravity subBuilder = new global::COD.Types.LevelNodeGravity();
+            if (contentCase_ == ContentOneofCase.LevelNodeGravity) {
+              subBuilder.MergeFrom(LevelNodeGravity);
+            }
+            input.ReadMessage(subBuilder);
+            LevelNodeGravity = subBuilder;
+            break;
+          }
+          case 74: {
+            global::COD.Types.LevelNodeLobbyTerminal subBuilder = new global::COD.Types.LevelNodeLobbyTerminal();
+            if (contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal) {
+              subBuilder.MergeFrom(LevelNodeLobbyTerminal);
+            }
+            input.ReadMessage(subBuilder);
+            LevelNodeLobbyTerminal = subBuilder;
+            break;
+          }
+          case 122: {
+            animations_.AddEntriesFrom(input, _repeated_animations_codec);
+            break;
+          }
         }
       }
     #endif
@@ -3653,6 +5054,28 @@ namespace COD.Types {
             }
             input.ReadMessage(subBuilder);
             LevelNodeGroup = subBuilder;
+            break;
+          }
+          case 66: {
+            global::COD.Types.LevelNodeGravity subBuilder = new global::COD.Types.LevelNodeGravity();
+            if (contentCase_ == ContentOneofCase.LevelNodeGravity) {
+              subBuilder.MergeFrom(LevelNodeGravity);
+            }
+            input.ReadMessage(subBuilder);
+            LevelNodeGravity = subBuilder;
+            break;
+          }
+          case 74: {
+            global::COD.Types.LevelNodeLobbyTerminal subBuilder = new global::COD.Types.LevelNodeLobbyTerminal();
+            if (contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal) {
+              subBuilder.MergeFrom(LevelNodeLobbyTerminal);
+            }
+            input.ReadMessage(subBuilder);
+            LevelNodeLobbyTerminal = subBuilder;
+            break;
+          }
+          case 122: {
+            animations_.AddEntriesFrom(ref input, _repeated_animations_codec);
             break;
           }
         }

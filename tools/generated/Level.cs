@@ -24,17 +24,17 @@ namespace COD.Level {
     static LevelReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgtsZXZlbC5wcm90bxIJQ09ELkxldmVsGgt0eXBlcy5wcm90byLlAQoFTGV2",
-            "ZWwSFQoNZm9ybWF0VmVyc2lvbhgBIAEoDRINCgV0aXRsZRgCIAEoCRIQCghj",
-            "cmVhdG9ycxgDIAEoCRITCgtkZXNjcmlwdGlvbhgEIAEoCRISCgpjb21wbGV4",
-            "aXR5GAUgASgNEhoKEm1heENoZWNrcG9pbnRDb3VudBgHIAEoDRI1ChBhbWJp",
-            "ZW5jZVNldHRpbmdzGAggASgLMhsuQ09ELlR5cGVzLkFtYmllbmNlU2V0dGlu",
-            "Z3MSKAoKbGV2ZWxOb2RlcxgGIAMoCzIULkNPRC5UeXBlcy5MZXZlbE5vZGVi",
-            "BnByb3RvMw=="));
+            "CgtsZXZlbC5wcm90bxIJQ09ELkxldmVsGgt0eXBlcy5wcm90byLzAQoFTGV2",
+            "ZWwSFQoNZm9ybWF0VmVyc2lvbhgBIAEoDRINCgV0aXRsZRgCIAEoCRIMCgR0",
+            "YWdzGAkgAygJEhAKCGNyZWF0b3JzGAMgASgJEhMKC2Rlc2NyaXB0aW9uGAQg",
+            "ASgJEhIKCmNvbXBsZXhpdHkYBSABKA0SGgoSbWF4Q2hlY2twb2ludENvdW50",
+            "GAcgASgNEjUKEGFtYmllbmNlU2V0dGluZ3MYCCABKAsyGy5DT0QuVHlwZXMu",
+            "QW1iaWVuY2VTZXR0aW5ncxIoCgpsZXZlbE5vZGVzGAYgAygLMhQuQ09ELlR5",
+            "cGVzLkxldmVsTm9kZWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::COD.Types.TypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Level.Level), global::COD.Level.Level.Parser, new[]{ "FormatVersion", "Title", "Creators", "Description", "Complexity", "MaxCheckpointCount", "AmbienceSettings", "LevelNodes" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Level.Level), global::COD.Level.Level.Parser, new[]{ "FormatVersion", "Title", "Tags", "Creators", "Description", "Complexity", "MaxCheckpointCount", "AmbienceSettings", "LevelNodes" }, null, null, null, null)
           }));
     }
     #endregion
@@ -72,6 +72,7 @@ namespace COD.Level {
     public Level(Level other) : this() {
       formatVersion_ = other.formatVersion_;
       title_ = other.title_;
+      tags_ = other.tags_.Clone();
       creators_ = other.creators_;
       description_ = other.description_;
       complexity_ = other.complexity_;
@@ -106,6 +107,16 @@ namespace COD.Level {
       set {
         title_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
       }
+    }
+
+    /// <summary>Field number for the "tags" field.</summary>
+    public const int TagsFieldNumber = 9;
+    private static readonly pb::FieldCodec<string> _repeated_tags_codec
+        = pb::FieldCodec.ForString(74);
+    private readonly pbc::RepeatedField<string> tags_ = new pbc::RepeatedField<string>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<string> Tags {
+      get { return tags_; }
     }
 
     /// <summary>Field number for the "creators" field.</summary>
@@ -188,6 +199,7 @@ namespace COD.Level {
       }
       if (FormatVersion != other.FormatVersion) return false;
       if (Title != other.Title) return false;
+      if(!tags_.Equals(other.tags_)) return false;
       if (Creators != other.Creators) return false;
       if (Description != other.Description) return false;
       if (Complexity != other.Complexity) return false;
@@ -202,6 +214,7 @@ namespace COD.Level {
       int hash = 1;
       if (FormatVersion != 0) hash ^= FormatVersion.GetHashCode();
       if (Title.Length != 0) hash ^= Title.GetHashCode();
+      hash ^= tags_.GetHashCode();
       if (Creators.Length != 0) hash ^= Creators.GetHashCode();
       if (Description.Length != 0) hash ^= Description.GetHashCode();
       if (Complexity != 0) hash ^= Complexity.GetHashCode();
@@ -253,6 +266,7 @@ namespace COD.Level {
         output.WriteRawTag(66);
         output.WriteMessage(AmbienceSettings);
       }
+      tags_.WriteTo(output, _repeated_tags_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -291,6 +305,7 @@ namespace COD.Level {
         output.WriteRawTag(66);
         output.WriteMessage(AmbienceSettings);
       }
+      tags_.WriteTo(ref output, _repeated_tags_codec);
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -306,6 +321,7 @@ namespace COD.Level {
       if (Title.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Title);
       }
+      size += tags_.CalculateSize(_repeated_tags_codec);
       if (Creators.Length != 0) {
         size += 1 + pb::CodedOutputStream.ComputeStringSize(Creators);
       }
@@ -339,6 +355,7 @@ namespace COD.Level {
       if (other.Title.Length != 0) {
         Title = other.Title;
       }
+      tags_.Add(other.tags_);
       if (other.Creators.Length != 0) {
         Creators = other.Creators;
       }
@@ -407,6 +424,10 @@ namespace COD.Level {
             input.ReadMessage(AmbienceSettings);
             break;
           }
+          case 74: {
+            tags_.AddEntriesFrom(input, _repeated_tags_codec);
+            break;
+          }
         }
       }
     #endif
@@ -454,6 +475,10 @@ namespace COD.Level {
               AmbienceSettings = new global::COD.Types.AmbienceSettings();
             }
             input.ReadMessage(AmbienceSettings);
+            break;
+          }
+          case 74: {
+            tags_.AddEntriesFrom(ref input, _repeated_tags_codec);
             break;
           }
         }

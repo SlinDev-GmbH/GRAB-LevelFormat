@@ -20,7 +20,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0btypes.proto\x12\tCOD.Types\")\n\x06Vector\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\"8\n\nQuaternion\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\x12\t\n\x01w\x18\x04 \x01(\x02\"3\n\x05\x43olor\x12\t\n\x01r\x18\x01 \x01(\x02\x12\t\n\x01g\x18\x02 \x01(\x02\x12\t\n\x01\x62\x18\x03 \x01(\x02\x12\t\n\x01\x61\x18\x04 \x01(\x02\"\xb6\x01\n\x10\x41mbienceSettings\x12(\n\x0eskyZenithColor\x18\x01 \x01(\x0b\x32\x10.COD.Types.Color\x12)\n\x0fskyHorizonColor\x18\x02 \x01(\x0b\x32\x10.COD.Types.Color\x12\x13\n\x0bsunAltitude\x18\x03 \x01(\x02\x12\x12\n\nsunAzimuth\x18\x04 \x01(\x02\x12\x0f\n\x07sunSize\x18\x05 \x01(\x02\x12\x13\n\x0b\x66ogDDensity\x18\x06 \x01(\x02\"\xaa\x01\n\x0eLevelNodeGroup\x12#\n\x08position\x18\x01 \x01(\x0b\x32\x11.COD.Types.Vector\x12 \n\x05scale\x18\x02 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x03 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12(\n\nchildNodes\x18\x04 \x03(\x0b\x32\x14.COD.Types.LevelNode\"n\n\x0eLevelNodeStart\x12#\n\x08position\x18\x01 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x02 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12\x0e\n\x06radius\x18\x03 \x01(\x02\"F\n\x0fLevelNodeFinish\x12#\n\x08position\x18\x01 \x01(\x0b\x32\x11.COD.Types.Vector\x12\x0e\n\x06radius\x18\x02 \x01(\x02\"\xfc\x01\n\x0fLevelNodeStatic\x12(\n\x05shape\x18\x01 \x01(\x0e\x32\x19.COD.Types.LevelNodeShape\x12.\n\x08material\x18\x02 \x01(\x0e\x32\x1c.COD.Types.LevelNodeMaterial\x12#\n\x08position\x18\x03 \x01(\x0b\x32\x11.COD.Types.Vector\x12 \n\x05scale\x18\x04 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x05 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12\x1f\n\x05\x63olor\x18\x06 \x01(\x0b\x32\x10.COD.Types.Color\"\x87\x02\n\x12LevelNodeCrumbling\x12(\n\x05shape\x18\x01 \x01(\x0e\x32\x19.COD.Types.LevelNodeShape\x12.\n\x08material\x18\x02 \x01(\x0e\x32\x1c.COD.Types.LevelNodeMaterial\x12#\n\x08position\x18\x03 \x01(\x0b\x32\x11.COD.Types.Vector\x12 \n\x05scale\x18\x04 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x05 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12\x12\n\nstableTime\x18\x06 \x01(\x02\x12\x13\n\x0brespawnTime\x18\x07 \x01(\x02\"k\n\rLevelNodeSign\x12#\n\x08position\x18\x01 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x02 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12\x0c\n\x04text\x18\x03 \x01(\t\"\xf0\x02\n\tLevelNode\x12\x10\n\x08isLocked\x18\x06 \x01(\x08\x12\x33\n\x0elevelNodeStart\x18\x01 \x01(\x0b\x32\x19.COD.Types.LevelNodeStartH\x00\x12\x35\n\x0flevelNodeFinish\x18\x02 \x01(\x0b\x32\x1a.COD.Types.LevelNodeFinishH\x00\x12\x35\n\x0flevelNodeStatic\x18\x03 \x01(\x0b\x32\x1a.COD.Types.LevelNodeStaticH\x00\x12\x31\n\rlevelNodeSign\x18\x04 \x01(\x0b\x32\x18.COD.Types.LevelNodeSignH\x00\x12;\n\x12levelNodeCrumbling\x18\x05 \x01(\x0b\x32\x1d.COD.Types.LevelNodeCrumblingH\x00\x12\x33\n\x0elevelNodeGroup\x18\x07 \x01(\x0b\x32\x19.COD.Types.LevelNodeGroupH\x00\x42\t\n\x07\x63ontent*\x90\x01\n\x0eLevelNodeShape\x12\t\n\x05START\x10\x00\x12\n\n\x06\x46INISH\x10\x01\x12\x08\n\x04SIGN\x10\x02\x12\x1c\n\x18__END_OF_SPECIAL_PARTS__\x10\x03\x12\t\n\x04\x43UBE\x10\xe8\x07\x12\x0b\n\x06SPHERE\x10\xe9\x07\x12\r\n\x08\x43YLINDER\x10\xea\x07\x12\x0c\n\x07PYRAMID\x10\xeb\x07\x12\n\n\x05PRISM\x10\xec\x07*\xad\x01\n\x11LevelNodeMaterial\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x00\x12\r\n\tGRABBABLE\x10\x01\x12\x07\n\x03ICE\x10\x02\x12\x08\n\x04LAVA\x10\x03\x12\x08\n\x04WOOD\x10\x04\x12\x0e\n\nGRAPPLABLE\x10\x05\x12\x13\n\x0fGRAPPLABLE_LAVA\x10\x06\x12\x17\n\x13GRABBABLE_CRUMBLING\x10\x07\x12\x13\n\x0f\x44\x45\x46\x41ULT_COLORED\x10\x08\x12\x0c\n\x08\x42OUNCING\x10\tb\x06proto3'
+  serialized_pb=b'\n\x0btypes.proto\x12\tCOD.Types\")\n\x06Vector\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\"8\n\nQuaternion\x12\t\n\x01x\x18\x01 \x01(\x02\x12\t\n\x01y\x18\x02 \x01(\x02\x12\t\n\x01z\x18\x03 \x01(\x02\x12\t\n\x01w\x18\x04 \x01(\x02\"3\n\x05\x43olor\x12\t\n\x01r\x18\x01 \x01(\x02\x12\t\n\x01g\x18\x02 \x01(\x02\x12\t\n\x01\x62\x18\x03 \x01(\x02\x12\t\n\x01\x61\x18\x04 \x01(\x02\"\xb5\x01\n\x10\x41mbienceSettings\x12(\n\x0eskyZenithColor\x18\x01 \x01(\x0b\x32\x10.COD.Types.Color\x12)\n\x0fskyHorizonColor\x18\x02 \x01(\x0b\x32\x10.COD.Types.Color\x12\x13\n\x0bsunAltitude\x18\x03 \x01(\x02\x12\x12\n\nsunAzimuth\x18\x04 \x01(\x02\x12\x0f\n\x07sunSize\x18\x05 \x01(\x02\x12\x12\n\nfogDensity\x18\x06 \x01(\x02\"\xaa\x01\n\x0eLevelNodeGroup\x12#\n\x08position\x18\x01 \x01(\x0b\x32\x11.COD.Types.Vector\x12 \n\x05scale\x18\x02 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x03 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12(\n\nchildNodes\x18\x04 \x03(\x0b\x32\x14.COD.Types.LevelNode\"n\n\x0eLevelNodeStart\x12#\n\x08position\x18\x01 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x02 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12\x0e\n\x06radius\x18\x03 \x01(\x02\"F\n\x0fLevelNodeFinish\x12#\n\x08position\x18\x01 \x01(\x0b\x32\x11.COD.Types.Vector\x12\x0e\n\x06radius\x18\x02 \x01(\x02\"\xc6\x02\n\x0fLevelNodeStatic\x12(\n\x05shape\x18\x01 \x01(\x0e\x32\x19.COD.Types.LevelNodeShape\x12.\n\x08material\x18\x02 \x01(\x0e\x32\x1c.COD.Types.LevelNodeMaterial\x12#\n\x08position\x18\x03 \x01(\x0b\x32\x11.COD.Types.Vector\x12 \n\x05scale\x18\x04 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x05 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12 \n\x06\x63olor1\x18\x06 \x01(\x0b\x32\x10.COD.Types.Color\x12 \n\x06\x63olor2\x18\t \x01(\x0b\x32\x10.COD.Types.Color\x12\x0e\n\x06isNeon\x18\x07 \x01(\x08\x12\x15\n\risTransparent\x18\x08 \x01(\x08\"\x87\x02\n\x12LevelNodeCrumbling\x12(\n\x05shape\x18\x01 \x01(\x0e\x32\x19.COD.Types.LevelNodeShape\x12.\n\x08material\x18\x02 \x01(\x0e\x32\x1c.COD.Types.LevelNodeMaterial\x12#\n\x08position\x18\x03 \x01(\x0b\x32\x11.COD.Types.Vector\x12 \n\x05scale\x18\x04 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x05 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12\x12\n\nstableTime\x18\x06 \x01(\x02\x12\x13\n\x0brespawnTime\x18\x07 \x01(\x02\"k\n\rLevelNodeSign\x12#\n\x08position\x18\x01 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x02 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12\x0c\n\x04text\x18\x03 \x01(\t\"\xf9\x01\n\x10LevelNodeGravity\x12.\n\x04mode\x18\x01 \x01(\x0e\x32 .COD.Types.LevelNodeGravity.Mode\x12#\n\x08position\x18\x02 \x01(\x0b\x32\x11.COD.Types.Vector\x12 \n\x05scale\x18\x03 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x04 \x01(\x0b\x32\x15.COD.Types.Quaternion\x12$\n\tdirection\x18\x05 \x01(\x0b\x32\x11.COD.Types.Vector\"\x1f\n\x04Mode\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x00\x12\n\n\x06NOLEGS\x10\x01\"f\n\x16LevelNodeLobbyTerminal\x12#\n\x08position\x18\x02 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x04 \x01(\x0b\x32\x15.COD.Types.Quaternion\"l\n\x0e\x41nimationFrame\x12\x0c\n\x04time\x18\x01 \x01(\x02\x12#\n\x08position\x18\x02 \x01(\x0b\x32\x11.COD.Types.Vector\x12\'\n\x08rotation\x18\x03 \x01(\x0b\x32\x15.COD.Types.Quaternion\"\xae\x01\n\tAnimation\x12\x0c\n\x04name\x18\x01 \x01(\t\x12)\n\x06\x66rames\x18\x02 \x03(\x0b\x32\x19.COD.Types.AnimationFrame\x12\x31\n\tdirection\x18\x03 \x01(\x0e\x32\x1e.COD.Types.Animation.Direction\x12\r\n\x05speed\x18\x04 \x01(\x02\"&\n\tDirection\x12\x0b\n\x07RESTART\x10\x00\x12\x0c\n\x08PINGPONG\x10\x01\"\x98\x04\n\tLevelNode\x12\x10\n\x08isLocked\x18\x06 \x01(\x08\x12\x33\n\x0elevelNodeStart\x18\x01 \x01(\x0b\x32\x19.COD.Types.LevelNodeStartH\x00\x12\x35\n\x0flevelNodeFinish\x18\x02 \x01(\x0b\x32\x1a.COD.Types.LevelNodeFinishH\x00\x12\x35\n\x0flevelNodeStatic\x18\x03 \x01(\x0b\x32\x1a.COD.Types.LevelNodeStaticH\x00\x12\x31\n\rlevelNodeSign\x18\x04 \x01(\x0b\x32\x18.COD.Types.LevelNodeSignH\x00\x12;\n\x12levelNodeCrumbling\x18\x05 \x01(\x0b\x32\x1d.COD.Types.LevelNodeCrumblingH\x00\x12\x33\n\x0elevelNodeGroup\x18\x07 \x01(\x0b\x32\x19.COD.Types.LevelNodeGroupH\x00\x12\x37\n\x10levelNodeGravity\x18\x08 \x01(\x0b\x32\x1b.COD.Types.LevelNodeGravityH\x00\x12\x43\n\x16levelNodeLobbyTerminal\x18\t \x01(\x0b\x32!.COD.Types.LevelNodeLobbyTerminalH\x00\x12(\n\nanimations\x18\x0f \x03(\x0b\x32\x14.COD.Types.AnimationB\t\n\x07\x63ontent*\xbb\x01\n\x0eLevelNodeShape\x12\t\n\x05START\x10\x00\x12\n\n\x06\x46INISH\x10\x01\x12\x08\n\x04SIGN\x10\x02\x12\x0b\n\x07GRAVITY\x10\x03\x12\x11\n\rLOBBYTERMINAL\x10\x04\x12\x1c\n\x18__END_OF_SPECIAL_PARTS__\x10\x05\x12\t\n\x04\x43UBE\x10\xe8\x07\x12\x0b\n\x06SPHERE\x10\xe9\x07\x12\r\n\x08\x43YLINDER\x10\xea\x07\x12\x0c\n\x07PYRAMID\x10\xeb\x07\x12\n\n\x05PRISM\x10\xec\x07\x12\t\n\x04\x43ONE\x10\xed\x07*\xb7\x01\n\x11LevelNodeMaterial\x12\x0b\n\x07\x44\x45\x46\x41ULT\x10\x00\x12\r\n\tGRABBABLE\x10\x01\x12\x07\n\x03ICE\x10\x02\x12\x08\n\x04LAVA\x10\x03\x12\x08\n\x04WOOD\x10\x04\x12\x0e\n\nGRAPPLABLE\x10\x05\x12\x13\n\x0fGRAPPLABLE_LAVA\x10\x06\x12\x17\n\x13GRABBABLE_CRUMBLING\x10\x07\x12\x13\n\x0f\x44\x45\x46\x41ULT_COLORED\x10\x08\x12\x0c\n\x08\x42OUNCING\x10\t\x12\x08\n\x04SNOW\x10\nb\x06proto3'
 )
 
 _LEVELNODESHAPE = _descriptor.EnumDescriptor(
@@ -46,40 +46,55 @@ _LEVELNODESHAPE = _descriptor.EnumDescriptor(
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='__END_OF_SPECIAL_PARTS__', index=3, number=3,
+      name='GRAVITY', index=3, number=3,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CUBE', index=4, number=1000,
+      name='LOBBYTERMINAL', index=4, number=4,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='SPHERE', index=5, number=1001,
+      name='__END_OF_SPECIAL_PARTS__', index=5, number=5,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='CYLINDER', index=6, number=1002,
+      name='CUBE', index=6, number=1000,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='PYRAMID', index=7, number=1003,
+      name='SPHERE', index=7, number=1001,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
     _descriptor.EnumValueDescriptor(
-      name='PRISM', index=8, number=1004,
+      name='CYLINDER', index=8, number=1002,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='PYRAMID', index=9, number=1003,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='PRISM', index=10, number=1004,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='CONE', index=11, number=1005,
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1724,
-  serialized_end=1868,
+  serialized_start=2608,
+  serialized_end=2795,
 )
 _sym_db.RegisterEnumDescriptor(_LEVELNODESHAPE)
 
@@ -141,11 +156,16 @@ _LEVELNODEMATERIAL = _descriptor.EnumDescriptor(
       serialized_options=None,
       type=None,
       create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='SNOW', index=10, number=10,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
   ],
   containing_type=None,
   serialized_options=None,
-  serialized_start=1871,
-  serialized_end=2044,
+  serialized_start=2798,
+  serialized_end=2981,
 )
 _sym_db.RegisterEnumDescriptor(_LEVELNODEMATERIAL)
 
@@ -153,12 +173,15 @@ LevelNodeMaterial = enum_type_wrapper.EnumTypeWrapper(_LEVELNODEMATERIAL)
 START = 0
 FINISH = 1
 SIGN = 2
-__END_OF_SPECIAL_PARTS__ = 3
+GRAVITY = 3
+LOBBYTERMINAL = 4
+__END_OF_SPECIAL_PARTS__ = 5
 CUBE = 1000
 SPHERE = 1001
 CYLINDER = 1002
 PYRAMID = 1003
 PRISM = 1004
+CONE = 1005
 DEFAULT = 0
 GRABBABLE = 1
 ICE = 2
@@ -169,7 +192,58 @@ GRAPPLABLE_LAVA = 6
 GRABBABLE_CRUMBLING = 7
 DEFAULT_COLORED = 8
 BOUNCING = 9
+SNOW = 10
 
+
+_LEVELNODEGRAVITY_MODE = _descriptor.EnumDescriptor(
+  name='Mode',
+  full_name='COD.Types.LevelNodeGravity.Mode',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='DEFAULT', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='NOLEGS', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=1644,
+  serialized_end=1675,
+)
+_sym_db.RegisterEnumDescriptor(_LEVELNODEGRAVITY_MODE)
+
+_ANIMATION_DIRECTION = _descriptor.EnumDescriptor(
+  name='Direction',
+  full_name='COD.Types.Animation.Direction',
+  filename=None,
+  file=DESCRIPTOR,
+  create_key=_descriptor._internal_create_key,
+  values=[
+    _descriptor.EnumValueDescriptor(
+      name='RESTART', index=0, number=0,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+    _descriptor.EnumValueDescriptor(
+      name='PINGPONG', index=1, number=1,
+      serialized_options=None,
+      type=None,
+      create_key=_descriptor._internal_create_key),
+  ],
+  containing_type=None,
+  serialized_options=None,
+  serialized_start=2028,
+  serialized_end=2066,
+)
+_sym_db.RegisterEnumDescriptor(_ANIMATION_DIRECTION)
 
 
 _VECTOR = _descriptor.Descriptor(
@@ -368,7 +442,7 @@ _AMBIENCESETTINGS = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='fogDDensity', full_name='COD.Types.AmbienceSettings.fogDDensity', index=5,
+      name='fogDensity', full_name='COD.Types.AmbienceSettings.fogDensity', index=5,
       number=6, type=2, cpp_type=6, label=1,
       has_default_value=False, default_value=float(0),
       message_type=None, enum_type=None, containing_type=None,
@@ -387,7 +461,7 @@ _AMBIENCESETTINGS = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=181,
-  serialized_end=363,
+  serialized_end=362,
 )
 
 
@@ -439,8 +513,8 @@ _LEVELNODEGROUP = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=366,
-  serialized_end=536,
+  serialized_start=365,
+  serialized_end=535,
 )
 
 
@@ -485,8 +559,8 @@ _LEVELNODESTART = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=538,
-  serialized_end=648,
+  serialized_start=537,
+  serialized_end=647,
 )
 
 
@@ -524,8 +598,8 @@ _LEVELNODEFINISH = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=650,
-  serialized_end=720,
+  serialized_start=649,
+  serialized_end=719,
 )
 
 
@@ -573,9 +647,30 @@ _LEVELNODESTATIC = _descriptor.Descriptor(
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
     _descriptor.FieldDescriptor(
-      name='color', full_name='COD.Types.LevelNodeStatic.color', index=5,
+      name='color1', full_name='COD.Types.LevelNodeStatic.color1', index=5,
       number=6, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='color2', full_name='COD.Types.LevelNodeStatic.color2', index=6,
+      number=9, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='isNeon', full_name='COD.Types.LevelNodeStatic.isNeon', index=7,
+      number=7, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='isTransparent', full_name='COD.Types.LevelNodeStatic.isTransparent', index=8,
+      number=8, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -591,8 +686,8 @@ _LEVELNODESTATIC = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=723,
-  serialized_end=975,
+  serialized_start=722,
+  serialized_end=1048,
 )
 
 
@@ -665,8 +760,8 @@ _LEVELNODECRUMBLING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=978,
-  serialized_end=1241,
+  serialized_start=1051,
+  serialized_end=1314,
 )
 
 
@@ -711,8 +806,208 @@ _LEVELNODESIGN = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1243,
-  serialized_end=1350,
+  serialized_start=1316,
+  serialized_end=1423,
+)
+
+
+_LEVELNODEGRAVITY = _descriptor.Descriptor(
+  name='LevelNodeGravity',
+  full_name='COD.Types.LevelNodeGravity',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='mode', full_name='COD.Types.LevelNodeGravity.mode', index=0,
+      number=1, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='position', full_name='COD.Types.LevelNodeGravity.position', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='scale', full_name='COD.Types.LevelNodeGravity.scale', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='rotation', full_name='COD.Types.LevelNodeGravity.rotation', index=3,
+      number=4, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='direction', full_name='COD.Types.LevelNodeGravity.direction', index=4,
+      number=5, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _LEVELNODEGRAVITY_MODE,
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1426,
+  serialized_end=1675,
+)
+
+
+_LEVELNODELOBBYTERMINAL = _descriptor.Descriptor(
+  name='LevelNodeLobbyTerminal',
+  full_name='COD.Types.LevelNodeLobbyTerminal',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='position', full_name='COD.Types.LevelNodeLobbyTerminal.position', index=0,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='rotation', full_name='COD.Types.LevelNodeLobbyTerminal.rotation', index=1,
+      number=4, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1677,
+  serialized_end=1779,
+)
+
+
+_ANIMATIONFRAME = _descriptor.Descriptor(
+  name='AnimationFrame',
+  full_name='COD.Types.AnimationFrame',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='time', full_name='COD.Types.AnimationFrame.time', index=0,
+      number=1, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='position', full_name='COD.Types.AnimationFrame.position', index=1,
+      number=2, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='rotation', full_name='COD.Types.AnimationFrame.rotation', index=2,
+      number=3, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1781,
+  serialized_end=1889,
+)
+
+
+_ANIMATION = _descriptor.Descriptor(
+  name='Animation',
+  full_name='COD.Types.Animation',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  create_key=_descriptor._internal_create_key,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='name', full_name='COD.Types.Animation.name', index=0,
+      number=1, type=9, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"".decode('utf-8'),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='frames', full_name='COD.Types.Animation.frames', index=1,
+      number=2, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='direction', full_name='COD.Types.Animation.direction', index=2,
+      number=3, type=14, cpp_type=8, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='speed', full_name='COD.Types.Animation.speed', index=3,
+      number=4, type=2, cpp_type=6, label=1,
+      has_default_value=False, default_value=float(0),
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+    _ANIMATION_DIRECTION,
+  ],
+  serialized_options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=1892,
+  serialized_end=2066,
 )
 
 
@@ -773,6 +1068,27 @@ _LEVELNODE = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='levelNodeGravity', full_name='COD.Types.LevelNode.levelNodeGravity', index=7,
+      number=8, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='levelNodeLobbyTerminal', full_name='COD.Types.LevelNode.levelNodeLobbyTerminal', index=8,
+      number=9, type=11, cpp_type=10, label=1,
+      has_default_value=False, default_value=None,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='animations', full_name='COD.Types.LevelNode.animations', index=9,
+      number=15, type=11, cpp_type=10, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -790,8 +1106,8 @@ _LEVELNODE = _descriptor.Descriptor(
       create_key=_descriptor._internal_create_key,
     fields=[]),
   ],
-  serialized_start=1353,
-  serialized_end=1721,
+  serialized_start=2069,
+  serialized_end=2605,
 )
 
 _AMBIENCESETTINGS.fields_by_name['skyZenithColor'].message_type = _COLOR
@@ -808,7 +1124,8 @@ _LEVELNODESTATIC.fields_by_name['material'].enum_type = _LEVELNODEMATERIAL
 _LEVELNODESTATIC.fields_by_name['position'].message_type = _VECTOR
 _LEVELNODESTATIC.fields_by_name['scale'].message_type = _VECTOR
 _LEVELNODESTATIC.fields_by_name['rotation'].message_type = _QUATERNION
-_LEVELNODESTATIC.fields_by_name['color'].message_type = _COLOR
+_LEVELNODESTATIC.fields_by_name['color1'].message_type = _COLOR
+_LEVELNODESTATIC.fields_by_name['color2'].message_type = _COLOR
 _LEVELNODECRUMBLING.fields_by_name['shape'].enum_type = _LEVELNODESHAPE
 _LEVELNODECRUMBLING.fields_by_name['material'].enum_type = _LEVELNODEMATERIAL
 _LEVELNODECRUMBLING.fields_by_name['position'].message_type = _VECTOR
@@ -816,12 +1133,28 @@ _LEVELNODECRUMBLING.fields_by_name['scale'].message_type = _VECTOR
 _LEVELNODECRUMBLING.fields_by_name['rotation'].message_type = _QUATERNION
 _LEVELNODESIGN.fields_by_name['position'].message_type = _VECTOR
 _LEVELNODESIGN.fields_by_name['rotation'].message_type = _QUATERNION
+_LEVELNODEGRAVITY.fields_by_name['mode'].enum_type = _LEVELNODEGRAVITY_MODE
+_LEVELNODEGRAVITY.fields_by_name['position'].message_type = _VECTOR
+_LEVELNODEGRAVITY.fields_by_name['scale'].message_type = _VECTOR
+_LEVELNODEGRAVITY.fields_by_name['rotation'].message_type = _QUATERNION
+_LEVELNODEGRAVITY.fields_by_name['direction'].message_type = _VECTOR
+_LEVELNODEGRAVITY_MODE.containing_type = _LEVELNODEGRAVITY
+_LEVELNODELOBBYTERMINAL.fields_by_name['position'].message_type = _VECTOR
+_LEVELNODELOBBYTERMINAL.fields_by_name['rotation'].message_type = _QUATERNION
+_ANIMATIONFRAME.fields_by_name['position'].message_type = _VECTOR
+_ANIMATIONFRAME.fields_by_name['rotation'].message_type = _QUATERNION
+_ANIMATION.fields_by_name['frames'].message_type = _ANIMATIONFRAME
+_ANIMATION.fields_by_name['direction'].enum_type = _ANIMATION_DIRECTION
+_ANIMATION_DIRECTION.containing_type = _ANIMATION
 _LEVELNODE.fields_by_name['levelNodeStart'].message_type = _LEVELNODESTART
 _LEVELNODE.fields_by_name['levelNodeFinish'].message_type = _LEVELNODEFINISH
 _LEVELNODE.fields_by_name['levelNodeStatic'].message_type = _LEVELNODESTATIC
 _LEVELNODE.fields_by_name['levelNodeSign'].message_type = _LEVELNODESIGN
 _LEVELNODE.fields_by_name['levelNodeCrumbling'].message_type = _LEVELNODECRUMBLING
 _LEVELNODE.fields_by_name['levelNodeGroup'].message_type = _LEVELNODEGROUP
+_LEVELNODE.fields_by_name['levelNodeGravity'].message_type = _LEVELNODEGRAVITY
+_LEVELNODE.fields_by_name['levelNodeLobbyTerminal'].message_type = _LEVELNODELOBBYTERMINAL
+_LEVELNODE.fields_by_name['animations'].message_type = _ANIMATION
 _LEVELNODE.oneofs_by_name['content'].fields.append(
   _LEVELNODE.fields_by_name['levelNodeStart'])
 _LEVELNODE.fields_by_name['levelNodeStart'].containing_oneof = _LEVELNODE.oneofs_by_name['content']
@@ -840,6 +1173,12 @@ _LEVELNODE.fields_by_name['levelNodeCrumbling'].containing_oneof = _LEVELNODE.on
 _LEVELNODE.oneofs_by_name['content'].fields.append(
   _LEVELNODE.fields_by_name['levelNodeGroup'])
 _LEVELNODE.fields_by_name['levelNodeGroup'].containing_oneof = _LEVELNODE.oneofs_by_name['content']
+_LEVELNODE.oneofs_by_name['content'].fields.append(
+  _LEVELNODE.fields_by_name['levelNodeGravity'])
+_LEVELNODE.fields_by_name['levelNodeGravity'].containing_oneof = _LEVELNODE.oneofs_by_name['content']
+_LEVELNODE.oneofs_by_name['content'].fields.append(
+  _LEVELNODE.fields_by_name['levelNodeLobbyTerminal'])
+_LEVELNODE.fields_by_name['levelNodeLobbyTerminal'].containing_oneof = _LEVELNODE.oneofs_by_name['content']
 DESCRIPTOR.message_types_by_name['Vector'] = _VECTOR
 DESCRIPTOR.message_types_by_name['Quaternion'] = _QUATERNION
 DESCRIPTOR.message_types_by_name['Color'] = _COLOR
@@ -850,6 +1189,10 @@ DESCRIPTOR.message_types_by_name['LevelNodeFinish'] = _LEVELNODEFINISH
 DESCRIPTOR.message_types_by_name['LevelNodeStatic'] = _LEVELNODESTATIC
 DESCRIPTOR.message_types_by_name['LevelNodeCrumbling'] = _LEVELNODECRUMBLING
 DESCRIPTOR.message_types_by_name['LevelNodeSign'] = _LEVELNODESIGN
+DESCRIPTOR.message_types_by_name['LevelNodeGravity'] = _LEVELNODEGRAVITY
+DESCRIPTOR.message_types_by_name['LevelNodeLobbyTerminal'] = _LEVELNODELOBBYTERMINAL
+DESCRIPTOR.message_types_by_name['AnimationFrame'] = _ANIMATIONFRAME
+DESCRIPTOR.message_types_by_name['Animation'] = _ANIMATION
 DESCRIPTOR.message_types_by_name['LevelNode'] = _LEVELNODE
 DESCRIPTOR.enum_types_by_name['LevelNodeShape'] = _LEVELNODESHAPE
 DESCRIPTOR.enum_types_by_name['LevelNodeMaterial'] = _LEVELNODEMATERIAL
@@ -924,6 +1267,34 @@ LevelNodeSign = _reflection.GeneratedProtocolMessageType('LevelNodeSign', (_mess
   # @@protoc_insertion_point(class_scope:COD.Types.LevelNodeSign)
   })
 _sym_db.RegisterMessage(LevelNodeSign)
+
+LevelNodeGravity = _reflection.GeneratedProtocolMessageType('LevelNodeGravity', (_message.Message,), {
+  'DESCRIPTOR' : _LEVELNODEGRAVITY,
+  '__module__' : 'types_pb2'
+  # @@protoc_insertion_point(class_scope:COD.Types.LevelNodeGravity)
+  })
+_sym_db.RegisterMessage(LevelNodeGravity)
+
+LevelNodeLobbyTerminal = _reflection.GeneratedProtocolMessageType('LevelNodeLobbyTerminal', (_message.Message,), {
+  'DESCRIPTOR' : _LEVELNODELOBBYTERMINAL,
+  '__module__' : 'types_pb2'
+  # @@protoc_insertion_point(class_scope:COD.Types.LevelNodeLobbyTerminal)
+  })
+_sym_db.RegisterMessage(LevelNodeLobbyTerminal)
+
+AnimationFrame = _reflection.GeneratedProtocolMessageType('AnimationFrame', (_message.Message,), {
+  'DESCRIPTOR' : _ANIMATIONFRAME,
+  '__module__' : 'types_pb2'
+  # @@protoc_insertion_point(class_scope:COD.Types.AnimationFrame)
+  })
+_sym_db.RegisterMessage(AnimationFrame)
+
+Animation = _reflection.GeneratedProtocolMessageType('Animation', (_message.Message,), {
+  'DESCRIPTOR' : _ANIMATION,
+  '__module__' : 'types_pb2'
+  # @@protoc_insertion_point(class_scope:COD.Types.Animation)
+  })
+_sym_db.RegisterMessage(Animation)
 
 LevelNode = _reflection.GeneratedProtocolMessageType('LevelNode', (_message.Message,), {
   'DESCRIPTOR' : _LEVELNODE,
