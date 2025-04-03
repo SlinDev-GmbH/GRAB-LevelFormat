@@ -9,6 +9,12 @@ message Vector
 	float z = 3;
 }
 
+message Vector2
+{
+	float x = 1;
+	float y = 2;
+}
+
 message Quaternion
 {
 	float x = 1;
@@ -44,8 +50,9 @@ enum LevelNodeShape
 	SIGN = 2;
 	GRAVITY = 3;
 	LOBBYTERMINAL = 4;
+	PARTICLE_EMITTER = 5;
 
-	__END_OF_SPECIAL_PARTS__ = 5;
+	__END_OF_SPECIAL_PARTS__ = 6;
 
 	CUBE = 1000;
 	SPHERE = 1001;
@@ -65,10 +72,12 @@ enum LevelNodeMaterial
 	GRAPPLABLE = 5;
 	GRAPPLABLE_LAVA = 6;
 
-	GRABBABLE_CRUMBLING= 7;
+	GRABBABLE_CRUMBLING = 7;
 	DEFAULT_COLORED = 8;
 	BOUNCING = 9;
 	SNOW = 10;
+
+	TRIGGER = 11; //Not actually written into files and the number on this could be changed without issues. Only used as enum value internally.
 }
 
 message LevelNodeGroup
@@ -89,6 +98,7 @@ message LevelNodeStart
 	Vector position = 1;
 	Quaternion rotation = 2; //Should always be upright and is meant to be used for the player rotation on spawn
 	float radius = 3;
+	string name = 4;
 }
 
 message LevelNodeFinish
@@ -157,43 +167,98 @@ message LevelNodeLobbyTerminal
 	Quaternion rotation = 4;
 }
 
-/*
-message TriggerTargetAnimation
-{
-	enum Mode
-	{
-		START = 0;
-		STOP = 1;
-		TOGGLE = 2;
-	}
-
-	string name = 1;
-	Mode mode = 2;
-}
-
-message TriggerTarget
-{
-	uint64 objectID = 1;
-
-	oneof content
-	{
-		TriggerTargetAnimation triggerTargetAnimation = 2;
-	}
-}
-
-message LevelNodeTrigger
+message LevelNodeParticleEmitter
 {
 	Vector position = 1;
 	Vector scale = 2;
 	Quaternion rotation = 3;
 
-	repeated TriggerTarget triggerTarget = 4;
+	uint32 particlesPerSecond = 5;
 
-	bool canHands = 8;
-	bool canHead = 9;
-	bool canGrapple = 10;
-	bool canBlock = 11;
-}*/
+	Vector2 lifeSpan = 6;
+	Color startColor = 7;
+	Color endColor = 8;
+	Vector2 startSize = 9;
+	Vector2 endSize = 10;
+	
+	Vector velocity = 14;
+	Vector velocityMin = 15;
+	Vector velocityMax = 16;
+	Vector accelerationMin = 17;
+	Vector accelerationMax = 18;
+}
+
+message TriggerSourceBasic
+{
+	enum Type
+	{
+		HAND = 0;
+		HEAD = 1;
+		GRAPPLE = 2;
+		FEET = 3;
+		BLOCK = 4;
+	}
+
+	Type type = 1;
+}
+
+message TriggerSource
+{
+	oneof content
+	{
+		TriggerSourceBasic triggerSourceBasic = 1;
+	}
+}
+
+message TriggerTargetAnimation
+{
+	enum Mode
+	{
+		STOP = 0;
+		START = 1;
+		TOGGLE = 2; //Toggles between start and stop
+		TOGGLE_REVERSE = 3; //Toggles between playing the animation forwards and backwards
+		RESTART = 4; //Like start, but will always play from the beginning (or end if reverse is on)
+		RESET = 5; //Reset to the initial state, playing looped default animation if there is one
+	}
+
+	uint64 objectID = 1;
+	string animationName = 2;
+	
+	bool loop = 3; //Make the animation repeat endlessly until it is stopped
+	bool reverse = 4; //Make the animation play backwards
+
+	Mode mode = 10;
+}
+
+message TriggerTargetSubLevel
+{
+	string levelIdentifier = 1;
+	string spawnPoint = 2;
+}
+
+message TriggerTarget
+{
+	oneof content
+	{
+		TriggerTargetAnimation triggerTargetAnimation = 1;
+		TriggerTargetSubLevel triggerTargetSubLevel = 2;
+	}
+}
+
+message LevelNodeTrigger
+{
+	LevelNodeShape shape = 1; //Must be one of CUBE, SPHERE, CYLINDER, PYRAMID, PRISM
+
+	Vector position = 2;
+	Vector scale = 3;
+	Quaternion rotation = 4;
+
+	bool isShared = 5;
+
+	repeated TriggerSource triggerSources = 6;
+	repeated TriggerTarget triggerTargets = 7;
+}
 
 message AnimationFrame
 {
@@ -230,8 +295,10 @@ message LevelNode
 		LevelNodeGroup levelNodeGroup = 7;
 		LevelNodeGravity levelNodeGravity = 8;
 		LevelNodeLobbyTerminal levelNodeLobbyTerminal = 9;
+		LevelNodeTrigger levelNodeTrigger = 10;
+		LevelNodeParticleEmitter levelNodeParticleEmitter = 11;
 	}
 
-	//A level node can have any number (might limit it in the UI) of named animations, if groups are involved every block that is part of the same animation should have an animation with the same name
-	repeated Animation animations = 15;
+	repeated Animation animations = 15; //A level node can have any number (might limit it in the UI) of named animations
+	int32 activeAnimation = 16; //Index into animations, -1 if it is not playing an animation at the start, ignored if there are no animations (so will default to 0 in that case)
 }

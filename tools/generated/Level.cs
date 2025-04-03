@@ -24,17 +24,18 @@ namespace COD.Level {
     static LevelReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "CgtsZXZlbC5wcm90bxIJQ09ELkxldmVsGgt0eXBlcy5wcm90byLzAQoFTGV2",
+            "CgtsZXZlbC5wcm90bxIJQ09ELkxldmVsGgt0eXBlcy5wcm90byKQAgoFTGV2",
             "ZWwSFQoNZm9ybWF0VmVyc2lvbhgBIAEoDRINCgV0aXRsZRgCIAEoCRIMCgR0",
             "YWdzGAkgAygJEhAKCGNyZWF0b3JzGAMgASgJEhMKC2Rlc2NyaXB0aW9uGAQg",
             "ASgJEhIKCmNvbXBsZXhpdHkYBSABKA0SGgoSbWF4Q2hlY2twb2ludENvdW50",
             "GAcgASgNEjUKEGFtYmllbmNlU2V0dGluZ3MYCCABKAsyGy5DT0QuVHlwZXMu",
-            "QW1iaWVuY2VTZXR0aW5ncxIoCgpsZXZlbE5vZGVzGAYgAygLMhQuQ09ELlR5",
-            "cGVzLkxldmVsTm9kZWIGcHJvdG8z"));
+            "QW1iaWVuY2VTZXR0aW5ncxIbChNkZWZhdWx0U3Bhd25Qb2ludElEGAogASgE",
+            "EigKCmxldmVsTm9kZXMYBiADKAsyFC5DT0QuVHlwZXMuTGV2ZWxOb2RlYgZw",
+            "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::COD.Types.TypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Level.Level), global::COD.Level.Level.Parser, new[]{ "FormatVersion", "Title", "Tags", "Creators", "Description", "Complexity", "MaxCheckpointCount", "AmbienceSettings", "LevelNodes" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Level.Level), global::COD.Level.Level.Parser, new[]{ "FormatVersion", "Title", "Tags", "Creators", "Description", "Complexity", "MaxCheckpointCount", "AmbienceSettings", "DefaultSpawnPointID", "LevelNodes" }, null, null, null, null)
           }));
     }
     #endregion
@@ -78,6 +79,7 @@ namespace COD.Level {
       complexity_ = other.complexity_;
       maxCheckpointCount_ = other.maxCheckpointCount_;
       ambienceSettings_ = other.ambienceSettings_ != null ? other.ambienceSettings_.Clone() : null;
+      defaultSpawnPointID_ = other.defaultSpawnPointID_;
       levelNodes_ = other.levelNodes_.Clone();
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
@@ -174,6 +176,17 @@ namespace COD.Level {
       }
     }
 
+    /// <summary>Field number for the "defaultSpawnPointID" field.</summary>
+    public const int DefaultSpawnPointIDFieldNumber = 10;
+    private ulong defaultSpawnPointID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong DefaultSpawnPointID {
+      get { return defaultSpawnPointID_; }
+      set {
+        defaultSpawnPointID_ = value;
+      }
+    }
+
     /// <summary>Field number for the "levelNodes" field.</summary>
     public const int LevelNodesFieldNumber = 6;
     private static readonly pb::FieldCodec<global::COD.Types.LevelNode> _repeated_levelNodes_codec
@@ -205,6 +218,7 @@ namespace COD.Level {
       if (Complexity != other.Complexity) return false;
       if (MaxCheckpointCount != other.MaxCheckpointCount) return false;
       if (!object.Equals(AmbienceSettings, other.AmbienceSettings)) return false;
+      if (DefaultSpawnPointID != other.DefaultSpawnPointID) return false;
       if(!levelNodes_.Equals(other.levelNodes_)) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -220,6 +234,7 @@ namespace COD.Level {
       if (Complexity != 0) hash ^= Complexity.GetHashCode();
       if (MaxCheckpointCount != 0) hash ^= MaxCheckpointCount.GetHashCode();
       if (ambienceSettings_ != null) hash ^= AmbienceSettings.GetHashCode();
+      if (DefaultSpawnPointID != 0UL) hash ^= DefaultSpawnPointID.GetHashCode();
       hash ^= levelNodes_.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -267,6 +282,10 @@ namespace COD.Level {
         output.WriteMessage(AmbienceSettings);
       }
       tags_.WriteTo(output, _repeated_tags_codec);
+      if (DefaultSpawnPointID != 0UL) {
+        output.WriteRawTag(80);
+        output.WriteUInt64(DefaultSpawnPointID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -306,6 +325,10 @@ namespace COD.Level {
         output.WriteMessage(AmbienceSettings);
       }
       tags_.WriteTo(ref output, _repeated_tags_codec);
+      if (DefaultSpawnPointID != 0UL) {
+        output.WriteRawTag(80);
+        output.WriteUInt64(DefaultSpawnPointID);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -336,6 +359,9 @@ namespace COD.Level {
       }
       if (ambienceSettings_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(AmbienceSettings);
+      }
+      if (DefaultSpawnPointID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(DefaultSpawnPointID);
       }
       size += levelNodes_.CalculateSize(_repeated_levelNodes_codec);
       if (_unknownFields != null) {
@@ -373,6 +399,9 @@ namespace COD.Level {
           AmbienceSettings = new global::COD.Types.AmbienceSettings();
         }
         AmbienceSettings.MergeFrom(other.AmbienceSettings);
+      }
+      if (other.DefaultSpawnPointID != 0UL) {
+        DefaultSpawnPointID = other.DefaultSpawnPointID;
       }
       levelNodes_.Add(other.levelNodes_);
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -428,6 +457,10 @@ namespace COD.Level {
             tags_.AddEntriesFrom(input, _repeated_tags_codec);
             break;
           }
+          case 80: {
+            DefaultSpawnPointID = input.ReadUInt64();
+            break;
+          }
         }
       }
     #endif
@@ -479,6 +512,10 @@ namespace COD.Level {
           }
           case 74: {
             tags_.AddEntriesFrom(ref input, _repeated_tags_codec);
+            break;
+          }
+          case 80: {
+            DefaultSpawnPointID = input.ReadUInt64();
             break;
           }
         }

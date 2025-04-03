@@ -14,7 +14,7 @@ GRAB stores everything in ```Android/data/com.slindev.grab``` or ```Android/data
 Your own levels that can be opened and saved in the editor are stored in ```levels/user``` The file name should have the ```.level``` extension, but the name itself can be anything. By default the game uses timestamps for the names to prevent any naming conflicts with already existing levels. Level file names only need to be unique for a user unless you want to update an existing level.
 
 At the root there is the Level object which can have some basic properties:
-* formatVersion - uint32 - This is used to filter out levels on old game versions that use new features. The current version is 10.
+* formatVersion - uint32 - This is used to filter out levels on old game versions that use new features. The current version is 12.
 * title - string - The name of the level.
 * creators - string - A comma seperated list of the names of the people that worked on the level.
 * description - string - A short description of what to expect from the level.

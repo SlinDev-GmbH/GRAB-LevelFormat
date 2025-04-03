@@ -25,90 +25,138 @@ namespace COD.Types {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Cgt0eXBlcy5wcm90bxIJQ09ELlR5cGVzIikKBlZlY3RvchIJCgF4GAEgASgC",
-            "EgkKAXkYAiABKAISCQoBehgDIAEoAiI4CgpRdWF0ZXJuaW9uEgkKAXgYASAB",
-            "KAISCQoBeRgCIAEoAhIJCgF6GAMgASgCEgkKAXcYBCABKAIiMwoFQ29sb3IS",
-            "CQoBchgBIAEoAhIJCgFnGAIgASgCEgkKAWIYAyABKAISCQoBYRgEIAEoAiK1",
-            "AQoQQW1iaWVuY2VTZXR0aW5ncxIoCg5za3laZW5pdGhDb2xvchgBIAEoCzIQ",
-            "LkNPRC5UeXBlcy5Db2xvchIpCg9za3lIb3Jpem9uQ29sb3IYAiABKAsyEC5D",
-            "T0QuVHlwZXMuQ29sb3ISEwoLc3VuQWx0aXR1ZGUYAyABKAISEgoKc3VuQXpp",
-            "bXV0aBgEIAEoAhIPCgdzdW5TaXplGAUgASgCEhIKCmZvZ0RlbnNpdHkYBiAB",
-            "KAIiqgEKDkxldmVsTm9kZUdyb3VwEiMKCHBvc2l0aW9uGAEgASgLMhEuQ09E",
-            "LlR5cGVzLlZlY3RvchIgCgVzY2FsZRgCIAEoCzIRLkNPRC5UeXBlcy5WZWN0",
-            "b3ISJwoIcm90YXRpb24YAyABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlvbhIo",
-            "CgpjaGlsZE5vZGVzGAQgAygLMhQuQ09ELlR5cGVzLkxldmVsTm9kZSJuCg5M",
-            "ZXZlbE5vZGVTdGFydBIjCghwb3NpdGlvbhgBIAEoCzIRLkNPRC5UeXBlcy5W",
-            "ZWN0b3ISJwoIcm90YXRpb24YAiABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlv",
-            "bhIOCgZyYWRpdXMYAyABKAIiRgoPTGV2ZWxOb2RlRmluaXNoEiMKCHBvc2l0",
-            "aW9uGAEgASgLMhEuQ09ELlR5cGVzLlZlY3RvchIOCgZyYWRpdXMYAiABKAIi",
-            "xgIKD0xldmVsTm9kZVN0YXRpYxIoCgVzaGFwZRgBIAEoDjIZLkNPRC5UeXBl",
-            "cy5MZXZlbE5vZGVTaGFwZRIuCghtYXRlcmlhbBgCIAEoDjIcLkNPRC5UeXBl",
-            "cy5MZXZlbE5vZGVNYXRlcmlhbBIjCghwb3NpdGlvbhgDIAEoCzIRLkNPRC5U",
-            "eXBlcy5WZWN0b3ISIAoFc2NhbGUYBCABKAsyES5DT0QuVHlwZXMuVmVjdG9y",
-            "EicKCHJvdGF0aW9uGAUgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24SIAoG",
-            "Y29sb3IxGAYgASgLMhAuQ09ELlR5cGVzLkNvbG9yEiAKBmNvbG9yMhgJIAEo",
-            "CzIQLkNPRC5UeXBlcy5Db2xvchIOCgZpc05lb24YByABKAgSFQoNaXNUcmFu",
-            "c3BhcmVudBgIIAEoCCKHAgoSTGV2ZWxOb2RlQ3J1bWJsaW5nEigKBXNoYXBl",
-            "GAEgASgOMhkuQ09ELlR5cGVzLkxldmVsTm9kZVNoYXBlEi4KCG1hdGVyaWFs",
-            "GAIgASgOMhwuQ09ELlR5cGVzLkxldmVsTm9kZU1hdGVyaWFsEiMKCHBvc2l0",
-            "aW9uGAMgASgLMhEuQ09ELlR5cGVzLlZlY3RvchIgCgVzY2FsZRgEIAEoCzIR",
-            "LkNPRC5UeXBlcy5WZWN0b3ISJwoIcm90YXRpb24YBSABKAsyFS5DT0QuVHlw",
-            "ZXMuUXVhdGVybmlvbhISCgpzdGFibGVUaW1lGAYgASgCEhMKC3Jlc3Bhd25U",
-            "aW1lGAcgASgCImsKDUxldmVsTm9kZVNpZ24SIwoIcG9zaXRpb24YASABKAsy",
-            "ES5DT0QuVHlwZXMuVmVjdG9yEicKCHJvdGF0aW9uGAIgASgLMhUuQ09ELlR5",
-            "cGVzLlF1YXRlcm5pb24SDAoEdGV4dBgDIAEoCSL5AQoQTGV2ZWxOb2RlR3Jh",
-            "dml0eRIuCgRtb2RlGAEgASgOMiAuQ09ELlR5cGVzLkxldmVsTm9kZUdyYXZp",
-            "dHkuTW9kZRIjCghwb3NpdGlvbhgCIAEoCzIRLkNPRC5UeXBlcy5WZWN0b3IS",
-            "IAoFc2NhbGUYAyABKAsyES5DT0QuVHlwZXMuVmVjdG9yEicKCHJvdGF0aW9u",
-            "GAQgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24SJAoJZGlyZWN0aW9uGAUg",
-            "ASgLMhEuQ09ELlR5cGVzLlZlY3RvciIfCgRNb2RlEgsKB0RFRkFVTFQQABIK",
-            "CgZOT0xFR1MQASJmChZMZXZlbE5vZGVMb2JieVRlcm1pbmFsEiMKCHBvc2l0",
-            "aW9uGAIgASgLMhEuQ09ELlR5cGVzLlZlY3RvchInCghyb3RhdGlvbhgEIAEo",
-            "CzIVLkNPRC5UeXBlcy5RdWF0ZXJuaW9uImwKDkFuaW1hdGlvbkZyYW1lEgwK",
-            "BHRpbWUYASABKAISIwoIcG9zaXRpb24YAiABKAsyES5DT0QuVHlwZXMuVmVj",
-            "dG9yEicKCHJvdGF0aW9uGAMgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24i",
-            "rgEKCUFuaW1hdGlvbhIMCgRuYW1lGAEgASgJEikKBmZyYW1lcxgCIAMoCzIZ",
-            "LkNPRC5UeXBlcy5BbmltYXRpb25GcmFtZRIxCglkaXJlY3Rpb24YAyABKA4y",
-            "Hi5DT0QuVHlwZXMuQW5pbWF0aW9uLkRpcmVjdGlvbhINCgVzcGVlZBgEIAEo",
-            "AiImCglEaXJlY3Rpb24SCwoHUkVTVEFSVBAAEgwKCFBJTkdQT05HEAEimAQK",
-            "CUxldmVsTm9kZRIQCghpc0xvY2tlZBgGIAEoCBIzCg5sZXZlbE5vZGVTdGFy",
-            "dBgBIAEoCzIZLkNPRC5UeXBlcy5MZXZlbE5vZGVTdGFydEgAEjUKD2xldmVs",
-            "Tm9kZUZpbmlzaBgCIAEoCzIaLkNPRC5UeXBlcy5MZXZlbE5vZGVGaW5pc2hI",
-            "ABI1Cg9sZXZlbE5vZGVTdGF0aWMYAyABKAsyGi5DT0QuVHlwZXMuTGV2ZWxO",
-            "b2RlU3RhdGljSAASMQoNbGV2ZWxOb2RlU2lnbhgEIAEoCzIYLkNPRC5UeXBl",
-            "cy5MZXZlbE5vZGVTaWduSAASOwoSbGV2ZWxOb2RlQ3J1bWJsaW5nGAUgASgL",
-            "Mh0uQ09ELlR5cGVzLkxldmVsTm9kZUNydW1ibGluZ0gAEjMKDmxldmVsTm9k",
-            "ZUdyb3VwGAcgASgLMhkuQ09ELlR5cGVzLkxldmVsTm9kZUdyb3VwSAASNwoQ",
-            "bGV2ZWxOb2RlR3Jhdml0eRgIIAEoCzIbLkNPRC5UeXBlcy5MZXZlbE5vZGVH",
-            "cmF2aXR5SAASQwoWbGV2ZWxOb2RlTG9iYnlUZXJtaW5hbBgJIAEoCzIhLkNP",
-            "RC5UeXBlcy5MZXZlbE5vZGVMb2JieVRlcm1pbmFsSAASKAoKYW5pbWF0aW9u",
-            "cxgPIAMoCzIULkNPRC5UeXBlcy5BbmltYXRpb25CCQoHY29udGVudCq7AQoO",
-            "TGV2ZWxOb2RlU2hhcGUSCQoFU1RBUlQQABIKCgZGSU5JU0gQARIICgRTSUdO",
-            "EAISCwoHR1JBVklUWRADEhEKDUxPQkJZVEVSTUlOQUwQBBIcChhfX0VORF9P",
-            "Rl9TUEVDSUFMX1BBUlRTX18QBRIJCgRDVUJFEOgHEgsKBlNQSEVSRRDpBxIN",
-            "CghDWUxJTkRFUhDqBxIMCgdQWVJBTUlEEOsHEgoKBVBSSVNNEOwHEgkKBENP",
-            "TkUQ7QcqtwEKEUxldmVsTm9kZU1hdGVyaWFsEgsKB0RFRkFVTFQQABINCglH",
-            "UkFCQkFCTEUQARIHCgNJQ0UQAhIICgRMQVZBEAMSCAoEV09PRBAEEg4KCkdS",
-            "QVBQTEFCTEUQBRITCg9HUkFQUExBQkxFX0xBVkEQBhIXChNHUkFCQkFCTEVf",
-            "Q1JVTUJMSU5HEAcSEwoPREVGQVVMVF9DT0xPUkVEEAgSDAoIQk9VTkNJTkcQ",
-            "CRIICgRTTk9XEApiBnByb3RvMw=="));
+            "EgkKAXkYAiABKAISCQoBehgDIAEoAiIfCgdWZWN0b3IyEgkKAXgYASABKAIS",
+            "CQoBeRgCIAEoAiI4CgpRdWF0ZXJuaW9uEgkKAXgYASABKAISCQoBeRgCIAEo",
+            "AhIJCgF6GAMgASgCEgkKAXcYBCABKAIiMwoFQ29sb3ISCQoBchgBIAEoAhIJ",
+            "CgFnGAIgASgCEgkKAWIYAyABKAISCQoBYRgEIAEoAiK1AQoQQW1iaWVuY2VT",
+            "ZXR0aW5ncxIoCg5za3laZW5pdGhDb2xvchgBIAEoCzIQLkNPRC5UeXBlcy5D",
+            "b2xvchIpCg9za3lIb3Jpem9uQ29sb3IYAiABKAsyEC5DT0QuVHlwZXMuQ29s",
+            "b3ISEwoLc3VuQWx0aXR1ZGUYAyABKAISEgoKc3VuQXppbXV0aBgEIAEoAhIP",
+            "CgdzdW5TaXplGAUgASgCEhIKCmZvZ0RlbnNpdHkYBiABKAIiqgEKDkxldmVs",
+            "Tm9kZUdyb3VwEiMKCHBvc2l0aW9uGAEgASgLMhEuQ09ELlR5cGVzLlZlY3Rv",
+            "chIgCgVzY2FsZRgCIAEoCzIRLkNPRC5UeXBlcy5WZWN0b3ISJwoIcm90YXRp",
+            "b24YAyABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlvbhIoCgpjaGlsZE5vZGVz",
+            "GAQgAygLMhQuQ09ELlR5cGVzLkxldmVsTm9kZSJ8Cg5MZXZlbE5vZGVTdGFy",
+            "dBIjCghwb3NpdGlvbhgBIAEoCzIRLkNPRC5UeXBlcy5WZWN0b3ISJwoIcm90",
+            "YXRpb24YAiABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlvbhIOCgZyYWRpdXMY",
+            "AyABKAISDAoEbmFtZRgEIAEoCSJGCg9MZXZlbE5vZGVGaW5pc2gSIwoIcG9z",
+            "aXRpb24YASABKAsyES5DT0QuVHlwZXMuVmVjdG9yEg4KBnJhZGl1cxgCIAEo",
+            "AiLGAgoPTGV2ZWxOb2RlU3RhdGljEigKBXNoYXBlGAEgASgOMhkuQ09ELlR5",
+            "cGVzLkxldmVsTm9kZVNoYXBlEi4KCG1hdGVyaWFsGAIgASgOMhwuQ09ELlR5",
+            "cGVzLkxldmVsTm9kZU1hdGVyaWFsEiMKCHBvc2l0aW9uGAMgASgLMhEuQ09E",
+            "LlR5cGVzLlZlY3RvchIgCgVzY2FsZRgEIAEoCzIRLkNPRC5UeXBlcy5WZWN0",
+            "b3ISJwoIcm90YXRpb24YBSABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlvbhIg",
+            "CgZjb2xvcjEYBiABKAsyEC5DT0QuVHlwZXMuQ29sb3ISIAoGY29sb3IyGAkg",
+            "ASgLMhAuQ09ELlR5cGVzLkNvbG9yEg4KBmlzTmVvbhgHIAEoCBIVCg1pc1Ry",
+            "YW5zcGFyZW50GAggASgIIocCChJMZXZlbE5vZGVDcnVtYmxpbmcSKAoFc2hh",
+            "cGUYASABKA4yGS5DT0QuVHlwZXMuTGV2ZWxOb2RlU2hhcGUSLgoIbWF0ZXJp",
+            "YWwYAiABKA4yHC5DT0QuVHlwZXMuTGV2ZWxOb2RlTWF0ZXJpYWwSIwoIcG9z",
+            "aXRpb24YAyABKAsyES5DT0QuVHlwZXMuVmVjdG9yEiAKBXNjYWxlGAQgASgL",
+            "MhEuQ09ELlR5cGVzLlZlY3RvchInCghyb3RhdGlvbhgFIAEoCzIVLkNPRC5U",
+            "eXBlcy5RdWF0ZXJuaW9uEhIKCnN0YWJsZVRpbWUYBiABKAISEwoLcmVzcGF3",
+            "blRpbWUYByABKAIiawoNTGV2ZWxOb2RlU2lnbhIjCghwb3NpdGlvbhgBIAEo",
+            "CzIRLkNPRC5UeXBlcy5WZWN0b3ISJwoIcm90YXRpb24YAiABKAsyFS5DT0Qu",
+            "VHlwZXMuUXVhdGVybmlvbhIMCgR0ZXh0GAMgASgJIvkBChBMZXZlbE5vZGVH",
+            "cmF2aXR5Ei4KBG1vZGUYASABKA4yIC5DT0QuVHlwZXMuTGV2ZWxOb2RlR3Jh",
+            "dml0eS5Nb2RlEiMKCHBvc2l0aW9uGAIgASgLMhEuQ09ELlR5cGVzLlZlY3Rv",
+            "chIgCgVzY2FsZRgDIAEoCzIRLkNPRC5UeXBlcy5WZWN0b3ISJwoIcm90YXRp",
+            "b24YBCABKAsyFS5DT0QuVHlwZXMuUXVhdGVybmlvbhIkCglkaXJlY3Rpb24Y",
+            "BSABKAsyES5DT0QuVHlwZXMuVmVjdG9yIh8KBE1vZGUSCwoHREVGQVVMVBAA",
+            "EgoKBk5PTEVHUxABImYKFkxldmVsTm9kZUxvYmJ5VGVybWluYWwSIwoIcG9z",
+            "aXRpb24YAiABKAsyES5DT0QuVHlwZXMuVmVjdG9yEicKCHJvdGF0aW9uGAQg",
+            "ASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24irwQKGExldmVsTm9kZVBhcnRp",
+            "Y2xlRW1pdHRlchIjCghwb3NpdGlvbhgBIAEoCzIRLkNPRC5UeXBlcy5WZWN0",
+            "b3ISIAoFc2NhbGUYAiABKAsyES5DT0QuVHlwZXMuVmVjdG9yEicKCHJvdGF0",
+            "aW9uGAMgASgLMhUuQ09ELlR5cGVzLlF1YXRlcm5pb24SGgoScGFydGljbGVz",
+            "UGVyU2Vjb25kGAUgASgNEiQKCGxpZmVTcGFuGAYgASgLMhIuQ09ELlR5cGVz",
+            "LlZlY3RvcjISJAoKc3RhcnRDb2xvchgHIAEoCzIQLkNPRC5UeXBlcy5Db2xv",
+            "chIiCghlbmRDb2xvchgIIAEoCzIQLkNPRC5UeXBlcy5Db2xvchIlCglzdGFy",
+            "dFNpemUYCSABKAsyEi5DT0QuVHlwZXMuVmVjdG9yMhIjCgdlbmRTaXplGAog",
+            "ASgLMhIuQ09ELlR5cGVzLlZlY3RvcjISIwoIdmVsb2NpdHkYDiABKAsyES5D",
+            "T0QuVHlwZXMuVmVjdG9yEiYKC3ZlbG9jaXR5TWluGA8gASgLMhEuQ09ELlR5",
+            "cGVzLlZlY3RvchImCgt2ZWxvY2l0eU1heBgQIAEoCzIRLkNPRC5UeXBlcy5W",
+            "ZWN0b3ISKgoPYWNjZWxlcmF0aW9uTWluGBEgASgLMhEuQ09ELlR5cGVzLlZl",
+            "Y3RvchIqCg9hY2NlbGVyYXRpb25NYXgYEiABKAsyES5DT0QuVHlwZXMuVmVj",
+            "dG9yIoQBChJUcmlnZ2VyU291cmNlQmFzaWMSMAoEdHlwZRgBIAEoDjIiLkNP",
+            "RC5UeXBlcy5UcmlnZ2VyU291cmNlQmFzaWMuVHlwZSI8CgRUeXBlEggKBEhB",
+            "TkQQABIICgRIRUFEEAESCwoHR1JBUFBMRRACEggKBEZFRVQQAxIJCgVCTE9D",
+            "SxAEIlcKDVRyaWdnZXJTb3VyY2USOwoSdHJpZ2dlclNvdXJjZUJhc2ljGAEg",
+            "ASgLMh0uQ09ELlR5cGVzLlRyaWdnZXJTb3VyY2VCYXNpY0gAQgkKB2NvbnRl",
+            "bnQi6wEKFlRyaWdnZXJUYXJnZXRBbmltYXRpb24SEAoIb2JqZWN0SUQYASAB",
+            "KAQSFQoNYW5pbWF0aW9uTmFtZRgCIAEoCRIMCgRsb29wGAMgASgIEg8KB3Jl",
+            "dmVyc2UYBCABKAgSNAoEbW9kZRgKIAEoDjImLkNPRC5UeXBlcy5UcmlnZ2Vy",
+            "VGFyZ2V0QW5pbWF0aW9uLk1vZGUiUwoETW9kZRIICgRTVE9QEAASCQoFU1RB",
+            "UlQQARIKCgZUT0dHTEUQAhISCg5UT0dHTEVfUkVWRVJTRRADEgsKB1JFU1RB",
+            "UlQQBBIJCgVSRVNFVBAFIkQKFVRyaWdnZXJUYXJnZXRTdWJMZXZlbBIXCg9s",
+            "ZXZlbElkZW50aWZpZXIYASABKAkSEgoKc3Bhd25Qb2ludBgCIAEoCSKiAQoN",
+            "VHJpZ2dlclRhcmdldBJDChZ0cmlnZ2VyVGFyZ2V0QW5pbWF0aW9uGAEgASgL",
+            "MiEuQ09ELlR5cGVzLlRyaWdnZXJUYXJnZXRBbmltYXRpb25IABJBChV0cmln",
+            "Z2VyVGFyZ2V0U3ViTGV2ZWwYAiABKAsyIC5DT0QuVHlwZXMuVHJpZ2dlclRh",
+            "cmdldFN1YkxldmVsSABCCQoHY29udGVudCKiAgoQTGV2ZWxOb2RlVHJpZ2dl",
+            "chIoCgVzaGFwZRgBIAEoDjIZLkNPRC5UeXBlcy5MZXZlbE5vZGVTaGFwZRIj",
+            "Cghwb3NpdGlvbhgCIAEoCzIRLkNPRC5UeXBlcy5WZWN0b3ISIAoFc2NhbGUY",
+            "AyABKAsyES5DT0QuVHlwZXMuVmVjdG9yEicKCHJvdGF0aW9uGAQgASgLMhUu",
+            "Q09ELlR5cGVzLlF1YXRlcm5pb24SEAoIaXNTaGFyZWQYBSABKAgSMAoOdHJp",
+            "Z2dlclNvdXJjZXMYBiADKAsyGC5DT0QuVHlwZXMuVHJpZ2dlclNvdXJjZRIw",
+            "Cg50cmlnZ2VyVGFyZ2V0cxgHIAMoCzIYLkNPRC5UeXBlcy5UcmlnZ2VyVGFy",
+            "Z2V0ImwKDkFuaW1hdGlvbkZyYW1lEgwKBHRpbWUYASABKAISIwoIcG9zaXRp",
+            "b24YAiABKAsyES5DT0QuVHlwZXMuVmVjdG9yEicKCHJvdGF0aW9uGAMgASgL",
+            "MhUuQ09ELlR5cGVzLlF1YXRlcm5pb24irgEKCUFuaW1hdGlvbhIMCgRuYW1l",
+            "GAEgASgJEikKBmZyYW1lcxgCIAMoCzIZLkNPRC5UeXBlcy5BbmltYXRpb25G",
+            "cmFtZRIxCglkaXJlY3Rpb24YAyABKA4yHi5DT0QuVHlwZXMuQW5pbWF0aW9u",
+            "LkRpcmVjdGlvbhINCgVzcGVlZBgEIAEoAiImCglEaXJlY3Rpb24SCwoHUkVT",
+            "VEFSVBAAEgwKCFBJTkdQT05HEAEiswUKCUxldmVsTm9kZRIQCghpc0xvY2tl",
+            "ZBgGIAEoCBIzCg5sZXZlbE5vZGVTdGFydBgBIAEoCzIZLkNPRC5UeXBlcy5M",
+            "ZXZlbE5vZGVTdGFydEgAEjUKD2xldmVsTm9kZUZpbmlzaBgCIAEoCzIaLkNP",
+            "RC5UeXBlcy5MZXZlbE5vZGVGaW5pc2hIABI1Cg9sZXZlbE5vZGVTdGF0aWMY",
+            "AyABKAsyGi5DT0QuVHlwZXMuTGV2ZWxOb2RlU3RhdGljSAASMQoNbGV2ZWxO",
+            "b2RlU2lnbhgEIAEoCzIYLkNPRC5UeXBlcy5MZXZlbE5vZGVTaWduSAASOwoS",
+            "bGV2ZWxOb2RlQ3J1bWJsaW5nGAUgASgLMh0uQ09ELlR5cGVzLkxldmVsTm9k",
+            "ZUNydW1ibGluZ0gAEjMKDmxldmVsTm9kZUdyb3VwGAcgASgLMhkuQ09ELlR5",
+            "cGVzLkxldmVsTm9kZUdyb3VwSAASNwoQbGV2ZWxOb2RlR3Jhdml0eRgIIAEo",
+            "CzIbLkNPRC5UeXBlcy5MZXZlbE5vZGVHcmF2aXR5SAASQwoWbGV2ZWxOb2Rl",
+            "TG9iYnlUZXJtaW5hbBgJIAEoCzIhLkNPRC5UeXBlcy5MZXZlbE5vZGVMb2Ji",
+            "eVRlcm1pbmFsSAASNwoQbGV2ZWxOb2RlVHJpZ2dlchgKIAEoCzIbLkNPRC5U",
+            "eXBlcy5MZXZlbE5vZGVUcmlnZ2VySAASRwoYbGV2ZWxOb2RlUGFydGljbGVF",
+            "bWl0dGVyGAsgASgLMiMuQ09ELlR5cGVzLkxldmVsTm9kZVBhcnRpY2xlRW1p",
+            "dHRlckgAEigKCmFuaW1hdGlvbnMYDyADKAsyFC5DT0QuVHlwZXMuQW5pbWF0",
+            "aW9uEhcKD2FjdGl2ZUFuaW1hdGlvbhgQIAEoBUIJCgdjb250ZW50KtEBCg5M",
+            "ZXZlbE5vZGVTaGFwZRIJCgVTVEFSVBAAEgoKBkZJTklTSBABEggKBFNJR04Q",
+            "AhILCgdHUkFWSVRZEAMSEQoNTE9CQllURVJNSU5BTBAEEhQKEFBBUlRJQ0xF",
+            "X0VNSVRURVIQBRIcChhfX0VORF9PRl9TUEVDSUFMX1BBUlRTX18QBhIJCgRD",
+            "VUJFEOgHEgsKBlNQSEVSRRDpBxINCghDWUxJTkRFUhDqBxIMCgdQWVJBTUlE",
+            "EOsHEgoKBVBSSVNNEOwHEgkKBENPTkUQ7QcqxAEKEUxldmVsTm9kZU1hdGVy",
+            "aWFsEgsKB0RFRkFVTFQQABINCglHUkFCQkFCTEUQARIHCgNJQ0UQAhIICgRM",
+            "QVZBEAMSCAoEV09PRBAEEg4KCkdSQVBQTEFCTEUQBRITCg9HUkFQUExBQkxF",
+            "X0xBVkEQBhIXChNHUkFCQkFCTEVfQ1JVTUJMSU5HEAcSEwoPREVGQVVMVF9D",
+            "T0xPUkVEEAgSDAoIQk9VTkNJTkcQCRIICgRTTk9XEAoSCwoHVFJJR0dFUhAL",
+            "YgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::COD.Types.LevelNodeShape), typeof(global::COD.Types.LevelNodeMaterial), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Vector), global::COD.Types.Vector.Parser, new[]{ "X", "Y", "Z" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Vector2), global::COD.Types.Vector2.Parser, new[]{ "X", "Y" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Quaternion), global::COD.Types.Quaternion.Parser, new[]{ "X", "Y", "Z", "W" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Color), global::COD.Types.Color.Parser, new[]{ "R", "G", "B", "A" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.AmbienceSettings), global::COD.Types.AmbienceSettings.Parser, new[]{ "SkyZenithColor", "SkyHorizonColor", "SunAltitude", "SunAzimuth", "SunSize", "FogDensity" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeGroup), global::COD.Types.LevelNodeGroup.Parser, new[]{ "Position", "Scale", "Rotation", "ChildNodes" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeStart), global::COD.Types.LevelNodeStart.Parser, new[]{ "Position", "Rotation", "Radius" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeStart), global::COD.Types.LevelNodeStart.Parser, new[]{ "Position", "Rotation", "Radius", "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeFinish), global::COD.Types.LevelNodeFinish.Parser, new[]{ "Position", "Radius" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeStatic), global::COD.Types.LevelNodeStatic.Parser, new[]{ "Shape", "Material", "Position", "Scale", "Rotation", "Color1", "Color2", "IsNeon", "IsTransparent" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeCrumbling), global::COD.Types.LevelNodeCrumbling.Parser, new[]{ "Shape", "Material", "Position", "Scale", "Rotation", "StableTime", "RespawnTime" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeSign), global::COD.Types.LevelNodeSign.Parser, new[]{ "Position", "Rotation", "Text" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeGravity), global::COD.Types.LevelNodeGravity.Parser, new[]{ "Mode", "Position", "Scale", "Rotation", "Direction" }, null, new[]{ typeof(global::COD.Types.LevelNodeGravity.Types.Mode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeLobbyTerminal), global::COD.Types.LevelNodeLobbyTerminal.Parser, new[]{ "Position", "Rotation" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeParticleEmitter), global::COD.Types.LevelNodeParticleEmitter.Parser, new[]{ "Position", "Scale", "Rotation", "ParticlesPerSecond", "LifeSpan", "StartColor", "EndColor", "StartSize", "EndSize", "Velocity", "VelocityMin", "VelocityMax", "AccelerationMin", "AccelerationMax" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.TriggerSourceBasic), global::COD.Types.TriggerSourceBasic.Parser, new[]{ "Type" }, null, new[]{ typeof(global::COD.Types.TriggerSourceBasic.Types.Type) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.TriggerSource), global::COD.Types.TriggerSource.Parser, new[]{ "TriggerSourceBasic" }, new[]{ "Content" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.TriggerTargetAnimation), global::COD.Types.TriggerTargetAnimation.Parser, new[]{ "ObjectID", "AnimationName", "Loop", "Reverse", "Mode" }, null, new[]{ typeof(global::COD.Types.TriggerTargetAnimation.Types.Mode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.TriggerTargetSubLevel), global::COD.Types.TriggerTargetSubLevel.Parser, new[]{ "LevelIdentifier", "SpawnPoint" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.TriggerTarget), global::COD.Types.TriggerTarget.Parser, new[]{ "TriggerTargetAnimation", "TriggerTargetSubLevel" }, new[]{ "Content" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNodeTrigger), global::COD.Types.LevelNodeTrigger.Parser, new[]{ "Shape", "Position", "Scale", "Rotation", "IsShared", "TriggerSources", "TriggerTargets" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.AnimationFrame), global::COD.Types.AnimationFrame.Parser, new[]{ "Time", "Position", "Rotation" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.Animation), global::COD.Types.Animation.Parser, new[]{ "Name", "Frames", "Direction", "Speed" }, null, new[]{ typeof(global::COD.Types.Animation.Types.Direction) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNode), global::COD.Types.LevelNode.Parser, new[]{ "IsLocked", "LevelNodeStart", "LevelNodeFinish", "LevelNodeStatic", "LevelNodeSign", "LevelNodeCrumbling", "LevelNodeGroup", "LevelNodeGravity", "LevelNodeLobbyTerminal", "Animations" }, new[]{ "Content" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::COD.Types.LevelNode), global::COD.Types.LevelNode.Parser, new[]{ "IsLocked", "LevelNodeStart", "LevelNodeFinish", "LevelNodeStatic", "LevelNodeSign", "LevelNodeCrumbling", "LevelNodeGroup", "LevelNodeGravity", "LevelNodeLobbyTerminal", "LevelNodeTrigger", "LevelNodeParticleEmitter", "Animations", "ActiveAnimation" }, new[]{ "Content" }, null, null, null)
           }));
     }
     #endregion
@@ -121,7 +169,8 @@ namespace COD.Types {
     [pbr::OriginalName("SIGN")] Sign = 2,
     [pbr::OriginalName("GRAVITY")] Gravity = 3,
     [pbr::OriginalName("LOBBYTERMINAL")] Lobbyterminal = 4,
-    [pbr::OriginalName("__END_OF_SPECIAL_PARTS__")] EndOfSpecialParts = 5,
+    [pbr::OriginalName("PARTICLE_EMITTER")] ParticleEmitter = 5,
+    [pbr::OriginalName("__END_OF_SPECIAL_PARTS__")] EndOfSpecialParts = 6,
     [pbr::OriginalName("CUBE")] Cube = 1000,
     [pbr::OriginalName("SPHERE")] Sphere = 1001,
     [pbr::OriginalName("CYLINDER")] Cylinder = 1002,
@@ -142,6 +191,10 @@ namespace COD.Types {
     [pbr::OriginalName("DEFAULT_COLORED")] DefaultColored = 8,
     [pbr::OriginalName("BOUNCING")] Bouncing = 9,
     [pbr::OriginalName("SNOW")] Snow = 10,
+    /// <summary>
+    ///Not actually written into files and the number on this could be changed without issues. Only used as enum value internally.
+    /// </summary>
+    [pbr::OriginalName("TRIGGER")] Trigger = 11,
   }
 
   #endregion
@@ -391,6 +444,214 @@ namespace COD.Types {
 
   }
 
+  public sealed partial class Vector2 : pb::IMessage<Vector2>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<Vector2> _parser = new pb::MessageParser<Vector2>(() => new Vector2());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<Vector2> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Vector2() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Vector2(Vector2 other) : this() {
+      x_ = other.x_;
+      y_ = other.y_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public Vector2 Clone() {
+      return new Vector2(this);
+    }
+
+    /// <summary>Field number for the "x" field.</summary>
+    public const int XFieldNumber = 1;
+    private float x_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float X {
+      get { return x_; }
+      set {
+        x_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "y" field.</summary>
+    public const int YFieldNumber = 2;
+    private float y_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public float Y {
+      get { return y_; }
+      set {
+        y_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as Vector2);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(Vector2 other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(X, other.X)) return false;
+      if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Y, other.Y)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (X != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(X);
+      if (Y != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Y);
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (X != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(X);
+      }
+      if (Y != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(Y);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (X != 0F) {
+        output.WriteRawTag(13);
+        output.WriteFloat(X);
+      }
+      if (Y != 0F) {
+        output.WriteRawTag(21);
+        output.WriteFloat(Y);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (X != 0F) {
+        size += 1 + 4;
+      }
+      if (Y != 0F) {
+        size += 1 + 4;
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(Vector2 other) {
+      if (other == null) {
+        return;
+      }
+      if (other.X != 0F) {
+        X = other.X;
+      }
+      if (other.Y != 0F) {
+        Y = other.Y;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 13: {
+            X = input.ReadFloat();
+            break;
+          }
+          case 21: {
+            Y = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 13: {
+            X = input.ReadFloat();
+            break;
+          }
+          case 21: {
+            Y = input.ReadFloat();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class Quaternion : pb::IMessage<Quaternion>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -403,7 +664,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -683,7 +944,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -963,7 +1224,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1333,7 +1594,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1635,7 +1896,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[5]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1655,6 +1916,7 @@ namespace COD.Types {
       position_ = other.position_ != null ? other.position_.Clone() : null;
       rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
       radius_ = other.radius_;
+      name_ = other.name_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -1699,6 +1961,17 @@ namespace COD.Types {
       }
     }
 
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 4;
+    private string name_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public override bool Equals(object other) {
       return Equals(other as LevelNodeStart);
@@ -1715,6 +1988,7 @@ namespace COD.Types {
       if (!object.Equals(Position, other.Position)) return false;
       if (!object.Equals(Rotation, other.Rotation)) return false;
       if (!pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.Equals(Radius, other.Radius)) return false;
+      if (Name != other.Name) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -1724,6 +1998,7 @@ namespace COD.Types {
       if (position_ != null) hash ^= Position.GetHashCode();
       if (rotation_ != null) hash ^= Rotation.GetHashCode();
       if (Radius != 0F) hash ^= pbc::ProtobufEqualityComparers.BitwiseSingleEqualityComparer.GetHashCode(Radius);
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1752,6 +2027,10 @@ namespace COD.Types {
         output.WriteRawTag(29);
         output.WriteFloat(Radius);
       }
+      if (Name.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Name);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -1773,6 +2052,10 @@ namespace COD.Types {
         output.WriteRawTag(29);
         output.WriteFloat(Radius);
       }
+      if (Name.Length != 0) {
+        output.WriteRawTag(34);
+        output.WriteString(Name);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -1790,6 +2073,9 @@ namespace COD.Types {
       }
       if (Radius != 0F) {
         size += 1 + 4;
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1816,6 +2102,9 @@ namespace COD.Types {
       }
       if (other.Radius != 0F) {
         Radius = other.Radius;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -1847,6 +2136,10 @@ namespace COD.Types {
           }
           case 29: {
             Radius = input.ReadFloat();
+            break;
+          }
+          case 34: {
+            Name = input.ReadString();
             break;
           }
         }
@@ -1881,6 +2174,10 @@ namespace COD.Types {
             Radius = input.ReadFloat();
             break;
           }
+          case 34: {
+            Name = input.ReadString();
+            break;
+          }
         }
       }
     }
@@ -1900,7 +2197,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[6]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2117,7 +2414,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[7]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2631,7 +2928,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[8]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3052,7 +3349,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[9]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3314,7 +3611,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[10]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[11]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3681,7 +3978,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[11]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[12]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3895,6 +4192,2382 @@ namespace COD.Types {
 
   }
 
+  public sealed partial class LevelNodeParticleEmitter : pb::IMessage<LevelNodeParticleEmitter>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LevelNodeParticleEmitter> _parser = new pb::MessageParser<LevelNodeParticleEmitter>(() => new LevelNodeParticleEmitter());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LevelNodeParticleEmitter> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[13]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeParticleEmitter() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeParticleEmitter(LevelNodeParticleEmitter other) : this() {
+      position_ = other.position_ != null ? other.position_.Clone() : null;
+      scale_ = other.scale_ != null ? other.scale_.Clone() : null;
+      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
+      particlesPerSecond_ = other.particlesPerSecond_;
+      lifeSpan_ = other.lifeSpan_ != null ? other.lifeSpan_.Clone() : null;
+      startColor_ = other.startColor_ != null ? other.startColor_.Clone() : null;
+      endColor_ = other.endColor_ != null ? other.endColor_.Clone() : null;
+      startSize_ = other.startSize_ != null ? other.startSize_.Clone() : null;
+      endSize_ = other.endSize_ != null ? other.endSize_.Clone() : null;
+      velocity_ = other.velocity_ != null ? other.velocity_.Clone() : null;
+      velocityMin_ = other.velocityMin_ != null ? other.velocityMin_.Clone() : null;
+      velocityMax_ = other.velocityMax_ != null ? other.velocityMax_.Clone() : null;
+      accelerationMin_ = other.accelerationMin_ != null ? other.accelerationMin_.Clone() : null;
+      accelerationMax_ = other.accelerationMax_ != null ? other.accelerationMax_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeParticleEmitter Clone() {
+      return new LevelNodeParticleEmitter(this);
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 1;
+    private global::COD.Types.Vector position_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Position {
+      get { return position_; }
+      set {
+        position_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "scale" field.</summary>
+    public const int ScaleFieldNumber = 2;
+    private global::COD.Types.Vector scale_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Scale {
+      get { return scale_; }
+      set {
+        scale_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rotation" field.</summary>
+    public const int RotationFieldNumber = 3;
+    private global::COD.Types.Quaternion rotation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Quaternion Rotation {
+      get { return rotation_; }
+      set {
+        rotation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "particlesPerSecond" field.</summary>
+    public const int ParticlesPerSecondFieldNumber = 5;
+    private uint particlesPerSecond_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public uint ParticlesPerSecond {
+      get { return particlesPerSecond_; }
+      set {
+        particlesPerSecond_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "lifeSpan" field.</summary>
+    public const int LifeSpanFieldNumber = 6;
+    private global::COD.Types.Vector2 lifeSpan_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector2 LifeSpan {
+      get { return lifeSpan_; }
+      set {
+        lifeSpan_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "startColor" field.</summary>
+    public const int StartColorFieldNumber = 7;
+    private global::COD.Types.Color startColor_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Color StartColor {
+      get { return startColor_; }
+      set {
+        startColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "endColor" field.</summary>
+    public const int EndColorFieldNumber = 8;
+    private global::COD.Types.Color endColor_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Color EndColor {
+      get { return endColor_; }
+      set {
+        endColor_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "startSize" field.</summary>
+    public const int StartSizeFieldNumber = 9;
+    private global::COD.Types.Vector2 startSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector2 StartSize {
+      get { return startSize_; }
+      set {
+        startSize_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "endSize" field.</summary>
+    public const int EndSizeFieldNumber = 10;
+    private global::COD.Types.Vector2 endSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector2 EndSize {
+      get { return endSize_; }
+      set {
+        endSize_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "velocity" field.</summary>
+    public const int VelocityFieldNumber = 14;
+    private global::COD.Types.Vector velocity_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Velocity {
+      get { return velocity_; }
+      set {
+        velocity_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "velocityMin" field.</summary>
+    public const int VelocityMinFieldNumber = 15;
+    private global::COD.Types.Vector velocityMin_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector VelocityMin {
+      get { return velocityMin_; }
+      set {
+        velocityMin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "velocityMax" field.</summary>
+    public const int VelocityMaxFieldNumber = 16;
+    private global::COD.Types.Vector velocityMax_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector VelocityMax {
+      get { return velocityMax_; }
+      set {
+        velocityMax_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "accelerationMin" field.</summary>
+    public const int AccelerationMinFieldNumber = 17;
+    private global::COD.Types.Vector accelerationMin_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector AccelerationMin {
+      get { return accelerationMin_; }
+      set {
+        accelerationMin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "accelerationMax" field.</summary>
+    public const int AccelerationMaxFieldNumber = 18;
+    private global::COD.Types.Vector accelerationMax_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector AccelerationMax {
+      get { return accelerationMax_; }
+      set {
+        accelerationMax_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LevelNodeParticleEmitter);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LevelNodeParticleEmitter other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(Position, other.Position)) return false;
+      if (!object.Equals(Scale, other.Scale)) return false;
+      if (!object.Equals(Rotation, other.Rotation)) return false;
+      if (ParticlesPerSecond != other.ParticlesPerSecond) return false;
+      if (!object.Equals(LifeSpan, other.LifeSpan)) return false;
+      if (!object.Equals(StartColor, other.StartColor)) return false;
+      if (!object.Equals(EndColor, other.EndColor)) return false;
+      if (!object.Equals(StartSize, other.StartSize)) return false;
+      if (!object.Equals(EndSize, other.EndSize)) return false;
+      if (!object.Equals(Velocity, other.Velocity)) return false;
+      if (!object.Equals(VelocityMin, other.VelocityMin)) return false;
+      if (!object.Equals(VelocityMax, other.VelocityMax)) return false;
+      if (!object.Equals(AccelerationMin, other.AccelerationMin)) return false;
+      if (!object.Equals(AccelerationMax, other.AccelerationMax)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (position_ != null) hash ^= Position.GetHashCode();
+      if (scale_ != null) hash ^= Scale.GetHashCode();
+      if (rotation_ != null) hash ^= Rotation.GetHashCode();
+      if (ParticlesPerSecond != 0) hash ^= ParticlesPerSecond.GetHashCode();
+      if (lifeSpan_ != null) hash ^= LifeSpan.GetHashCode();
+      if (startColor_ != null) hash ^= StartColor.GetHashCode();
+      if (endColor_ != null) hash ^= EndColor.GetHashCode();
+      if (startSize_ != null) hash ^= StartSize.GetHashCode();
+      if (endSize_ != null) hash ^= EndSize.GetHashCode();
+      if (velocity_ != null) hash ^= Velocity.GetHashCode();
+      if (velocityMin_ != null) hash ^= VelocityMin.GetHashCode();
+      if (velocityMax_ != null) hash ^= VelocityMax.GetHashCode();
+      if (accelerationMin_ != null) hash ^= AccelerationMin.GetHashCode();
+      if (accelerationMax_ != null) hash ^= AccelerationMax.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (position_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Position);
+      }
+      if (scale_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Scale);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Rotation);
+      }
+      if (ParticlesPerSecond != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(ParticlesPerSecond);
+      }
+      if (lifeSpan_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(LifeSpan);
+      }
+      if (startColor_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(StartColor);
+      }
+      if (endColor_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(EndColor);
+      }
+      if (startSize_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(StartSize);
+      }
+      if (endSize_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(EndSize);
+      }
+      if (velocity_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(Velocity);
+      }
+      if (velocityMin_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(VelocityMin);
+      }
+      if (velocityMax_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(VelocityMax);
+      }
+      if (accelerationMin_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(AccelerationMin);
+      }
+      if (accelerationMax_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(AccelerationMax);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (position_ != null) {
+        output.WriteRawTag(10);
+        output.WriteMessage(Position);
+      }
+      if (scale_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Scale);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Rotation);
+      }
+      if (ParticlesPerSecond != 0) {
+        output.WriteRawTag(40);
+        output.WriteUInt32(ParticlesPerSecond);
+      }
+      if (lifeSpan_ != null) {
+        output.WriteRawTag(50);
+        output.WriteMessage(LifeSpan);
+      }
+      if (startColor_ != null) {
+        output.WriteRawTag(58);
+        output.WriteMessage(StartColor);
+      }
+      if (endColor_ != null) {
+        output.WriteRawTag(66);
+        output.WriteMessage(EndColor);
+      }
+      if (startSize_ != null) {
+        output.WriteRawTag(74);
+        output.WriteMessage(StartSize);
+      }
+      if (endSize_ != null) {
+        output.WriteRawTag(82);
+        output.WriteMessage(EndSize);
+      }
+      if (velocity_ != null) {
+        output.WriteRawTag(114);
+        output.WriteMessage(Velocity);
+      }
+      if (velocityMin_ != null) {
+        output.WriteRawTag(122);
+        output.WriteMessage(VelocityMin);
+      }
+      if (velocityMax_ != null) {
+        output.WriteRawTag(130, 1);
+        output.WriteMessage(VelocityMax);
+      }
+      if (accelerationMin_ != null) {
+        output.WriteRawTag(138, 1);
+        output.WriteMessage(AccelerationMin);
+      }
+      if (accelerationMax_ != null) {
+        output.WriteRawTag(146, 1);
+        output.WriteMessage(AccelerationMax);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (position_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      }
+      if (scale_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Scale);
+      }
+      if (rotation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
+      }
+      if (ParticlesPerSecond != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(ParticlesPerSecond);
+      }
+      if (lifeSpan_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LifeSpan);
+      }
+      if (startColor_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartColor);
+      }
+      if (endColor_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndColor);
+      }
+      if (startSize_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(StartSize);
+      }
+      if (endSize_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(EndSize);
+      }
+      if (velocity_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Velocity);
+      }
+      if (velocityMin_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(VelocityMin);
+      }
+      if (velocityMax_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(VelocityMax);
+      }
+      if (accelerationMin_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AccelerationMin);
+      }
+      if (accelerationMax_ != null) {
+        size += 2 + pb::CodedOutputStream.ComputeMessageSize(AccelerationMax);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LevelNodeParticleEmitter other) {
+      if (other == null) {
+        return;
+      }
+      if (other.position_ != null) {
+        if (position_ == null) {
+          Position = new global::COD.Types.Vector();
+        }
+        Position.MergeFrom(other.Position);
+      }
+      if (other.scale_ != null) {
+        if (scale_ == null) {
+          Scale = new global::COD.Types.Vector();
+        }
+        Scale.MergeFrom(other.Scale);
+      }
+      if (other.rotation_ != null) {
+        if (rotation_ == null) {
+          Rotation = new global::COD.Types.Quaternion();
+        }
+        Rotation.MergeFrom(other.Rotation);
+      }
+      if (other.ParticlesPerSecond != 0) {
+        ParticlesPerSecond = other.ParticlesPerSecond;
+      }
+      if (other.lifeSpan_ != null) {
+        if (lifeSpan_ == null) {
+          LifeSpan = new global::COD.Types.Vector2();
+        }
+        LifeSpan.MergeFrom(other.LifeSpan);
+      }
+      if (other.startColor_ != null) {
+        if (startColor_ == null) {
+          StartColor = new global::COD.Types.Color();
+        }
+        StartColor.MergeFrom(other.StartColor);
+      }
+      if (other.endColor_ != null) {
+        if (endColor_ == null) {
+          EndColor = new global::COD.Types.Color();
+        }
+        EndColor.MergeFrom(other.EndColor);
+      }
+      if (other.startSize_ != null) {
+        if (startSize_ == null) {
+          StartSize = new global::COD.Types.Vector2();
+        }
+        StartSize.MergeFrom(other.StartSize);
+      }
+      if (other.endSize_ != null) {
+        if (endSize_ == null) {
+          EndSize = new global::COD.Types.Vector2();
+        }
+        EndSize.MergeFrom(other.EndSize);
+      }
+      if (other.velocity_ != null) {
+        if (velocity_ == null) {
+          Velocity = new global::COD.Types.Vector();
+        }
+        Velocity.MergeFrom(other.Velocity);
+      }
+      if (other.velocityMin_ != null) {
+        if (velocityMin_ == null) {
+          VelocityMin = new global::COD.Types.Vector();
+        }
+        VelocityMin.MergeFrom(other.VelocityMin);
+      }
+      if (other.velocityMax_ != null) {
+        if (velocityMax_ == null) {
+          VelocityMax = new global::COD.Types.Vector();
+        }
+        VelocityMax.MergeFrom(other.VelocityMax);
+      }
+      if (other.accelerationMin_ != null) {
+        if (accelerationMin_ == null) {
+          AccelerationMin = new global::COD.Types.Vector();
+        }
+        AccelerationMin.MergeFrom(other.AccelerationMin);
+      }
+      if (other.accelerationMax_ != null) {
+        if (accelerationMax_ == null) {
+          AccelerationMax = new global::COD.Types.Vector();
+        }
+        AccelerationMax.MergeFrom(other.AccelerationMax);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 18: {
+            if (scale_ == null) {
+              Scale = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Scale);
+            break;
+          }
+          case 26: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+          case 40: {
+            ParticlesPerSecond = input.ReadUInt32();
+            break;
+          }
+          case 50: {
+            if (lifeSpan_ == null) {
+              LifeSpan = new global::COD.Types.Vector2();
+            }
+            input.ReadMessage(LifeSpan);
+            break;
+          }
+          case 58: {
+            if (startColor_ == null) {
+              StartColor = new global::COD.Types.Color();
+            }
+            input.ReadMessage(StartColor);
+            break;
+          }
+          case 66: {
+            if (endColor_ == null) {
+              EndColor = new global::COD.Types.Color();
+            }
+            input.ReadMessage(EndColor);
+            break;
+          }
+          case 74: {
+            if (startSize_ == null) {
+              StartSize = new global::COD.Types.Vector2();
+            }
+            input.ReadMessage(StartSize);
+            break;
+          }
+          case 82: {
+            if (endSize_ == null) {
+              EndSize = new global::COD.Types.Vector2();
+            }
+            input.ReadMessage(EndSize);
+            break;
+          }
+          case 114: {
+            if (velocity_ == null) {
+              Velocity = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Velocity);
+            break;
+          }
+          case 122: {
+            if (velocityMin_ == null) {
+              VelocityMin = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(VelocityMin);
+            break;
+          }
+          case 130: {
+            if (velocityMax_ == null) {
+              VelocityMax = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(VelocityMax);
+            break;
+          }
+          case 138: {
+            if (accelerationMin_ == null) {
+              AccelerationMin = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(AccelerationMin);
+            break;
+          }
+          case 146: {
+            if (accelerationMax_ == null) {
+              AccelerationMax = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(AccelerationMax);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 18: {
+            if (scale_ == null) {
+              Scale = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Scale);
+            break;
+          }
+          case 26: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+          case 40: {
+            ParticlesPerSecond = input.ReadUInt32();
+            break;
+          }
+          case 50: {
+            if (lifeSpan_ == null) {
+              LifeSpan = new global::COD.Types.Vector2();
+            }
+            input.ReadMessage(LifeSpan);
+            break;
+          }
+          case 58: {
+            if (startColor_ == null) {
+              StartColor = new global::COD.Types.Color();
+            }
+            input.ReadMessage(StartColor);
+            break;
+          }
+          case 66: {
+            if (endColor_ == null) {
+              EndColor = new global::COD.Types.Color();
+            }
+            input.ReadMessage(EndColor);
+            break;
+          }
+          case 74: {
+            if (startSize_ == null) {
+              StartSize = new global::COD.Types.Vector2();
+            }
+            input.ReadMessage(StartSize);
+            break;
+          }
+          case 82: {
+            if (endSize_ == null) {
+              EndSize = new global::COD.Types.Vector2();
+            }
+            input.ReadMessage(EndSize);
+            break;
+          }
+          case 114: {
+            if (velocity_ == null) {
+              Velocity = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Velocity);
+            break;
+          }
+          case 122: {
+            if (velocityMin_ == null) {
+              VelocityMin = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(VelocityMin);
+            break;
+          }
+          case 130: {
+            if (velocityMax_ == null) {
+              VelocityMax = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(VelocityMax);
+            break;
+          }
+          case 138: {
+            if (accelerationMin_ == null) {
+              AccelerationMin = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(AccelerationMin);
+            break;
+          }
+          case 146: {
+            if (accelerationMax_ == null) {
+              AccelerationMax = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(AccelerationMax);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class TriggerSourceBasic : pb::IMessage<TriggerSourceBasic>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TriggerSourceBasic> _parser = new pb::MessageParser<TriggerSourceBasic>(() => new TriggerSourceBasic());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TriggerSourceBasic> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[14]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerSourceBasic() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerSourceBasic(TriggerSourceBasic other) : this() {
+      type_ = other.type_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerSourceBasic Clone() {
+      return new TriggerSourceBasic(this);
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 1;
+    private global::COD.Types.TriggerSourceBasic.Types.Type type_ = global::COD.Types.TriggerSourceBasic.Types.Type.Hand;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.TriggerSourceBasic.Types.Type Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TriggerSourceBasic);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TriggerSourceBasic other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Type != other.Type) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Type != global::COD.Types.TriggerSourceBasic.Types.Type.Hand) hash ^= Type.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Type != global::COD.Types.TriggerSourceBasic.Types.Type.Hand) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Type != global::COD.Types.TriggerSourceBasic.Types.Type.Hand) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Type != global::COD.Types.TriggerSourceBasic.Types.Type.Hand) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TriggerSourceBasic other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Type != global::COD.Types.TriggerSourceBasic.Types.Type.Hand) {
+        Type = other.Type;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Type = (global::COD.Types.TriggerSourceBasic.Types.Type) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Type = (global::COD.Types.TriggerSourceBasic.Types.Type) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the TriggerSourceBasic message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Type {
+        [pbr::OriginalName("HAND")] Hand = 0,
+        [pbr::OriginalName("HEAD")] Head = 1,
+        [pbr::OriginalName("GRAPPLE")] Grapple = 2,
+        [pbr::OriginalName("FEET")] Feet = 3,
+        [pbr::OriginalName("BLOCK")] Block = 4,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class TriggerSource : pb::IMessage<TriggerSource>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TriggerSource> _parser = new pb::MessageParser<TriggerSource>(() => new TriggerSource());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TriggerSource> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[15]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerSource() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerSource(TriggerSource other) : this() {
+      switch (other.ContentCase) {
+        case ContentOneofCase.TriggerSourceBasic:
+          TriggerSourceBasic = other.TriggerSourceBasic.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerSource Clone() {
+      return new TriggerSource(this);
+    }
+
+    /// <summary>Field number for the "triggerSourceBasic" field.</summary>
+    public const int TriggerSourceBasicFieldNumber = 1;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.TriggerSourceBasic TriggerSourceBasic {
+      get { return contentCase_ == ContentOneofCase.TriggerSourceBasic ? (global::COD.Types.TriggerSourceBasic) content_ : null; }
+      set {
+        content_ = value;
+        contentCase_ = value == null ? ContentOneofCase.None : ContentOneofCase.TriggerSourceBasic;
+      }
+    }
+
+    private object content_;
+    /// <summary>Enum of possible cases for the "content" oneof.</summary>
+    public enum ContentOneofCase {
+      None = 0,
+      TriggerSourceBasic = 1,
+    }
+    private ContentOneofCase contentCase_ = ContentOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ContentOneofCase ContentCase {
+      get { return contentCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearContent() {
+      contentCase_ = ContentOneofCase.None;
+      content_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TriggerSource);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TriggerSource other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(TriggerSourceBasic, other.TriggerSourceBasic)) return false;
+      if (ContentCase != other.ContentCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (contentCase_ == ContentOneofCase.TriggerSourceBasic) hash ^= TriggerSourceBasic.GetHashCode();
+      hash ^= (int) contentCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (contentCase_ == ContentOneofCase.TriggerSourceBasic) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TriggerSourceBasic);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (contentCase_ == ContentOneofCase.TriggerSourceBasic) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TriggerSourceBasic);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (contentCase_ == ContentOneofCase.TriggerSourceBasic) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TriggerSourceBasic);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TriggerSource other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.ContentCase) {
+        case ContentOneofCase.TriggerSourceBasic:
+          if (TriggerSourceBasic == null) {
+            TriggerSourceBasic = new global::COD.Types.TriggerSourceBasic();
+          }
+          TriggerSourceBasic.MergeFrom(other.TriggerSourceBasic);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::COD.Types.TriggerSourceBasic subBuilder = new global::COD.Types.TriggerSourceBasic();
+            if (contentCase_ == ContentOneofCase.TriggerSourceBasic) {
+              subBuilder.MergeFrom(TriggerSourceBasic);
+            }
+            input.ReadMessage(subBuilder);
+            TriggerSourceBasic = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::COD.Types.TriggerSourceBasic subBuilder = new global::COD.Types.TriggerSourceBasic();
+            if (contentCase_ == ContentOneofCase.TriggerSourceBasic) {
+              subBuilder.MergeFrom(TriggerSourceBasic);
+            }
+            input.ReadMessage(subBuilder);
+            TriggerSourceBasic = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class TriggerTargetAnimation : pb::IMessage<TriggerTargetAnimation>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TriggerTargetAnimation> _parser = new pb::MessageParser<TriggerTargetAnimation>(() => new TriggerTargetAnimation());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TriggerTargetAnimation> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[16]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTargetAnimation() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTargetAnimation(TriggerTargetAnimation other) : this() {
+      objectID_ = other.objectID_;
+      animationName_ = other.animationName_;
+      loop_ = other.loop_;
+      reverse_ = other.reverse_;
+      mode_ = other.mode_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTargetAnimation Clone() {
+      return new TriggerTargetAnimation(this);
+    }
+
+    /// <summary>Field number for the "objectID" field.</summary>
+    public const int ObjectIDFieldNumber = 1;
+    private ulong objectID_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ulong ObjectID {
+      get { return objectID_; }
+      set {
+        objectID_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "animationName" field.</summary>
+    public const int AnimationNameFieldNumber = 2;
+    private string animationName_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string AnimationName {
+      get { return animationName_; }
+      set {
+        animationName_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "loop" field.</summary>
+    public const int LoopFieldNumber = 3;
+    private bool loop_;
+    /// <summary>
+    ///Make the animation repeat endlessly until it is stopped
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Loop {
+      get { return loop_; }
+      set {
+        loop_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "reverse" field.</summary>
+    public const int ReverseFieldNumber = 4;
+    private bool reverse_;
+    /// <summary>
+    ///Make the animation play backwards
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Reverse {
+      get { return reverse_; }
+      set {
+        reverse_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "mode" field.</summary>
+    public const int ModeFieldNumber = 10;
+    private global::COD.Types.TriggerTargetAnimation.Types.Mode mode_ = global::COD.Types.TriggerTargetAnimation.Types.Mode.Stop;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.TriggerTargetAnimation.Types.Mode Mode {
+      get { return mode_; }
+      set {
+        mode_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TriggerTargetAnimation);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TriggerTargetAnimation other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ObjectID != other.ObjectID) return false;
+      if (AnimationName != other.AnimationName) return false;
+      if (Loop != other.Loop) return false;
+      if (Reverse != other.Reverse) return false;
+      if (Mode != other.Mode) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ObjectID != 0UL) hash ^= ObjectID.GetHashCode();
+      if (AnimationName.Length != 0) hash ^= AnimationName.GetHashCode();
+      if (Loop != false) hash ^= Loop.GetHashCode();
+      if (Reverse != false) hash ^= Reverse.GetHashCode();
+      if (Mode != global::COD.Types.TriggerTargetAnimation.Types.Mode.Stop) hash ^= Mode.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ObjectID != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(ObjectID);
+      }
+      if (AnimationName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AnimationName);
+      }
+      if (Loop != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(Loop);
+      }
+      if (Reverse != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(Reverse);
+      }
+      if (Mode != global::COD.Types.TriggerTargetAnimation.Types.Mode.Stop) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) Mode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ObjectID != 0UL) {
+        output.WriteRawTag(8);
+        output.WriteUInt64(ObjectID);
+      }
+      if (AnimationName.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(AnimationName);
+      }
+      if (Loop != false) {
+        output.WriteRawTag(24);
+        output.WriteBool(Loop);
+      }
+      if (Reverse != false) {
+        output.WriteRawTag(32);
+        output.WriteBool(Reverse);
+      }
+      if (Mode != global::COD.Types.TriggerTargetAnimation.Types.Mode.Stop) {
+        output.WriteRawTag(80);
+        output.WriteEnum((int) Mode);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (ObjectID != 0UL) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt64Size(ObjectID);
+      }
+      if (AnimationName.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(AnimationName);
+      }
+      if (Loop != false) {
+        size += 1 + 1;
+      }
+      if (Reverse != false) {
+        size += 1 + 1;
+      }
+      if (Mode != global::COD.Types.TriggerTargetAnimation.Types.Mode.Stop) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Mode);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TriggerTargetAnimation other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ObjectID != 0UL) {
+        ObjectID = other.ObjectID;
+      }
+      if (other.AnimationName.Length != 0) {
+        AnimationName = other.AnimationName;
+      }
+      if (other.Loop != false) {
+        Loop = other.Loop;
+      }
+      if (other.Reverse != false) {
+        Reverse = other.Reverse;
+      }
+      if (other.Mode != global::COD.Types.TriggerTargetAnimation.Types.Mode.Stop) {
+        Mode = other.Mode;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ObjectID = input.ReadUInt64();
+            break;
+          }
+          case 18: {
+            AnimationName = input.ReadString();
+            break;
+          }
+          case 24: {
+            Loop = input.ReadBool();
+            break;
+          }
+          case 32: {
+            Reverse = input.ReadBool();
+            break;
+          }
+          case 80: {
+            Mode = (global::COD.Types.TriggerTargetAnimation.Types.Mode) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ObjectID = input.ReadUInt64();
+            break;
+          }
+          case 18: {
+            AnimationName = input.ReadString();
+            break;
+          }
+          case 24: {
+            Loop = input.ReadBool();
+            break;
+          }
+          case 32: {
+            Reverse = input.ReadBool();
+            break;
+          }
+          case 80: {
+            Mode = (global::COD.Types.TriggerTargetAnimation.Types.Mode) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the TriggerTargetAnimation message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static partial class Types {
+      public enum Mode {
+        [pbr::OriginalName("STOP")] Stop = 0,
+        [pbr::OriginalName("START")] Start = 1,
+        /// <summary>
+        ///Toggles between start and stop
+        /// </summary>
+        [pbr::OriginalName("TOGGLE")] Toggle = 2,
+        /// <summary>
+        ///Toggles between playing the animation forwards and backwards
+        /// </summary>
+        [pbr::OriginalName("TOGGLE_REVERSE")] ToggleReverse = 3,
+        /// <summary>
+        ///Like start, but will always play from the beginning (or end if reverse is on)
+        /// </summary>
+        [pbr::OriginalName("RESTART")] Restart = 4,
+        /// <summary>
+        ///Reset to the initial state, playing looped default animation if there is one
+        /// </summary>
+        [pbr::OriginalName("RESET")] Reset = 5,
+      }
+
+    }
+    #endregion
+
+  }
+
+  public sealed partial class TriggerTargetSubLevel : pb::IMessage<TriggerTargetSubLevel>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TriggerTargetSubLevel> _parser = new pb::MessageParser<TriggerTargetSubLevel>(() => new TriggerTargetSubLevel());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TriggerTargetSubLevel> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[17]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTargetSubLevel() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTargetSubLevel(TriggerTargetSubLevel other) : this() {
+      levelIdentifier_ = other.levelIdentifier_;
+      spawnPoint_ = other.spawnPoint_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTargetSubLevel Clone() {
+      return new TriggerTargetSubLevel(this);
+    }
+
+    /// <summary>Field number for the "levelIdentifier" field.</summary>
+    public const int LevelIdentifierFieldNumber = 1;
+    private string levelIdentifier_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string LevelIdentifier {
+      get { return levelIdentifier_; }
+      set {
+        levelIdentifier_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "spawnPoint" field.</summary>
+    public const int SpawnPointFieldNumber = 2;
+    private string spawnPoint_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public string SpawnPoint {
+      get { return spawnPoint_; }
+      set {
+        spawnPoint_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TriggerTargetSubLevel);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TriggerTargetSubLevel other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (LevelIdentifier != other.LevelIdentifier) return false;
+      if (SpawnPoint != other.SpawnPoint) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (LevelIdentifier.Length != 0) hash ^= LevelIdentifier.GetHashCode();
+      if (SpawnPoint.Length != 0) hash ^= SpawnPoint.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (LevelIdentifier.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(LevelIdentifier);
+      }
+      if (SpawnPoint.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SpawnPoint);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (LevelIdentifier.Length != 0) {
+        output.WriteRawTag(10);
+        output.WriteString(LevelIdentifier);
+      }
+      if (SpawnPoint.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(SpawnPoint);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (LevelIdentifier.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(LevelIdentifier);
+      }
+      if (SpawnPoint.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(SpawnPoint);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TriggerTargetSubLevel other) {
+      if (other == null) {
+        return;
+      }
+      if (other.LevelIdentifier.Length != 0) {
+        LevelIdentifier = other.LevelIdentifier;
+      }
+      if (other.SpawnPoint.Length != 0) {
+        SpawnPoint = other.SpawnPoint;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            LevelIdentifier = input.ReadString();
+            break;
+          }
+          case 18: {
+            SpawnPoint = input.ReadString();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            LevelIdentifier = input.ReadString();
+            break;
+          }
+          case 18: {
+            SpawnPoint = input.ReadString();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class TriggerTarget : pb::IMessage<TriggerTarget>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<TriggerTarget> _parser = new pb::MessageParser<TriggerTarget>(() => new TriggerTarget());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<TriggerTarget> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[18]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTarget() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTarget(TriggerTarget other) : this() {
+      switch (other.ContentCase) {
+        case ContentOneofCase.TriggerTargetAnimation:
+          TriggerTargetAnimation = other.TriggerTargetAnimation.Clone();
+          break;
+        case ContentOneofCase.TriggerTargetSubLevel:
+          TriggerTargetSubLevel = other.TriggerTargetSubLevel.Clone();
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public TriggerTarget Clone() {
+      return new TriggerTarget(this);
+    }
+
+    /// <summary>Field number for the "triggerTargetAnimation" field.</summary>
+    public const int TriggerTargetAnimationFieldNumber = 1;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.TriggerTargetAnimation TriggerTargetAnimation {
+      get { return contentCase_ == ContentOneofCase.TriggerTargetAnimation ? (global::COD.Types.TriggerTargetAnimation) content_ : null; }
+      set {
+        content_ = value;
+        contentCase_ = value == null ? ContentOneofCase.None : ContentOneofCase.TriggerTargetAnimation;
+      }
+    }
+
+    /// <summary>Field number for the "triggerTargetSubLevel" field.</summary>
+    public const int TriggerTargetSubLevelFieldNumber = 2;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.TriggerTargetSubLevel TriggerTargetSubLevel {
+      get { return contentCase_ == ContentOneofCase.TriggerTargetSubLevel ? (global::COD.Types.TriggerTargetSubLevel) content_ : null; }
+      set {
+        content_ = value;
+        contentCase_ = value == null ? ContentOneofCase.None : ContentOneofCase.TriggerTargetSubLevel;
+      }
+    }
+
+    private object content_;
+    /// <summary>Enum of possible cases for the "content" oneof.</summary>
+    public enum ContentOneofCase {
+      None = 0,
+      TriggerTargetAnimation = 1,
+      TriggerTargetSubLevel = 2,
+    }
+    private ContentOneofCase contentCase_ = ContentOneofCase.None;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public ContentOneofCase ContentCase {
+      get { return contentCase_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void ClearContent() {
+      contentCase_ = ContentOneofCase.None;
+      content_ = null;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as TriggerTarget);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(TriggerTarget other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (!object.Equals(TriggerTargetAnimation, other.TriggerTargetAnimation)) return false;
+      if (!object.Equals(TriggerTargetSubLevel, other.TriggerTargetSubLevel)) return false;
+      if (ContentCase != other.ContentCase) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (contentCase_ == ContentOneofCase.TriggerTargetAnimation) hash ^= TriggerTargetAnimation.GetHashCode();
+      if (contentCase_ == ContentOneofCase.TriggerTargetSubLevel) hash ^= TriggerTargetSubLevel.GetHashCode();
+      hash ^= (int) contentCase_;
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (contentCase_ == ContentOneofCase.TriggerTargetAnimation) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TriggerTargetAnimation);
+      }
+      if (contentCase_ == ContentOneofCase.TriggerTargetSubLevel) {
+        output.WriteRawTag(18);
+        output.WriteMessage(TriggerTargetSubLevel);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (contentCase_ == ContentOneofCase.TriggerTargetAnimation) {
+        output.WriteRawTag(10);
+        output.WriteMessage(TriggerTargetAnimation);
+      }
+      if (contentCase_ == ContentOneofCase.TriggerTargetSubLevel) {
+        output.WriteRawTag(18);
+        output.WriteMessage(TriggerTargetSubLevel);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (contentCase_ == ContentOneofCase.TriggerTargetAnimation) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TriggerTargetAnimation);
+      }
+      if (contentCase_ == ContentOneofCase.TriggerTargetSubLevel) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(TriggerTargetSubLevel);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(TriggerTarget other) {
+      if (other == null) {
+        return;
+      }
+      switch (other.ContentCase) {
+        case ContentOneofCase.TriggerTargetAnimation:
+          if (TriggerTargetAnimation == null) {
+            TriggerTargetAnimation = new global::COD.Types.TriggerTargetAnimation();
+          }
+          TriggerTargetAnimation.MergeFrom(other.TriggerTargetAnimation);
+          break;
+        case ContentOneofCase.TriggerTargetSubLevel:
+          if (TriggerTargetSubLevel == null) {
+            TriggerTargetSubLevel = new global::COD.Types.TriggerTargetSubLevel();
+          }
+          TriggerTargetSubLevel.MergeFrom(other.TriggerTargetSubLevel);
+          break;
+      }
+
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            global::COD.Types.TriggerTargetAnimation subBuilder = new global::COD.Types.TriggerTargetAnimation();
+            if (contentCase_ == ContentOneofCase.TriggerTargetAnimation) {
+              subBuilder.MergeFrom(TriggerTargetAnimation);
+            }
+            input.ReadMessage(subBuilder);
+            TriggerTargetAnimation = subBuilder;
+            break;
+          }
+          case 18: {
+            global::COD.Types.TriggerTargetSubLevel subBuilder = new global::COD.Types.TriggerTargetSubLevel();
+            if (contentCase_ == ContentOneofCase.TriggerTargetSubLevel) {
+              subBuilder.MergeFrom(TriggerTargetSubLevel);
+            }
+            input.ReadMessage(subBuilder);
+            TriggerTargetSubLevel = subBuilder;
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            global::COD.Types.TriggerTargetAnimation subBuilder = new global::COD.Types.TriggerTargetAnimation();
+            if (contentCase_ == ContentOneofCase.TriggerTargetAnimation) {
+              subBuilder.MergeFrom(TriggerTargetAnimation);
+            }
+            input.ReadMessage(subBuilder);
+            TriggerTargetAnimation = subBuilder;
+            break;
+          }
+          case 18: {
+            global::COD.Types.TriggerTargetSubLevel subBuilder = new global::COD.Types.TriggerTargetSubLevel();
+            if (contentCase_ == ContentOneofCase.TriggerTargetSubLevel) {
+              subBuilder.MergeFrom(TriggerTargetSubLevel);
+            }
+            input.ReadMessage(subBuilder);
+            TriggerTargetSubLevel = subBuilder;
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  public sealed partial class LevelNodeTrigger : pb::IMessage<LevelNodeTrigger>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<LevelNodeTrigger> _parser = new pb::MessageParser<LevelNodeTrigger>(() => new LevelNodeTrigger());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pb::MessageParser<LevelNodeTrigger> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[19]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeTrigger() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeTrigger(LevelNodeTrigger other) : this() {
+      shape_ = other.shape_;
+      position_ = other.position_ != null ? other.position_.Clone() : null;
+      scale_ = other.scale_ != null ? other.scale_.Clone() : null;
+      rotation_ = other.rotation_ != null ? other.rotation_.Clone() : null;
+      isShared_ = other.isShared_;
+      triggerSources_ = other.triggerSources_.Clone();
+      triggerTargets_ = other.triggerTargets_.Clone();
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public LevelNodeTrigger Clone() {
+      return new LevelNodeTrigger(this);
+    }
+
+    /// <summary>Field number for the "shape" field.</summary>
+    public const int ShapeFieldNumber = 1;
+    private global::COD.Types.LevelNodeShape shape_ = global::COD.Types.LevelNodeShape.Start;
+    /// <summary>
+    ///Must be one of CUBE, SPHERE, CYLINDER, PYRAMID, PRISM
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.LevelNodeShape Shape {
+      get { return shape_; }
+      set {
+        shape_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "position" field.</summary>
+    public const int PositionFieldNumber = 2;
+    private global::COD.Types.Vector position_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Position {
+      get { return position_; }
+      set {
+        position_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "scale" field.</summary>
+    public const int ScaleFieldNumber = 3;
+    private global::COD.Types.Vector scale_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Vector Scale {
+      get { return scale_; }
+      set {
+        scale_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "rotation" field.</summary>
+    public const int RotationFieldNumber = 4;
+    private global::COD.Types.Quaternion rotation_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.Quaternion Rotation {
+      get { return rotation_; }
+      set {
+        rotation_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "isShared" field.</summary>
+    public const int IsSharedFieldNumber = 5;
+    private bool isShared_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool IsShared {
+      get { return isShared_; }
+      set {
+        isShared_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "triggerSources" field.</summary>
+    public const int TriggerSourcesFieldNumber = 6;
+    private static readonly pb::FieldCodec<global::COD.Types.TriggerSource> _repeated_triggerSources_codec
+        = pb::FieldCodec.ForMessage(50, global::COD.Types.TriggerSource.Parser);
+    private readonly pbc::RepeatedField<global::COD.Types.TriggerSource> triggerSources_ = new pbc::RepeatedField<global::COD.Types.TriggerSource>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::COD.Types.TriggerSource> TriggerSources {
+      get { return triggerSources_; }
+    }
+
+    /// <summary>Field number for the "triggerTargets" field.</summary>
+    public const int TriggerTargetsFieldNumber = 7;
+    private static readonly pb::FieldCodec<global::COD.Types.TriggerTarget> _repeated_triggerTargets_codec
+        = pb::FieldCodec.ForMessage(58, global::COD.Types.TriggerTarget.Parser);
+    private readonly pbc::RepeatedField<global::COD.Types.TriggerTarget> triggerTargets_ = new pbc::RepeatedField<global::COD.Types.TriggerTarget>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public pbc::RepeatedField<global::COD.Types.TriggerTarget> TriggerTargets {
+      get { return triggerTargets_; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override bool Equals(object other) {
+      return Equals(other as LevelNodeTrigger);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public bool Equals(LevelNodeTrigger other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (Shape != other.Shape) return false;
+      if (!object.Equals(Position, other.Position)) return false;
+      if (!object.Equals(Scale, other.Scale)) return false;
+      if (!object.Equals(Rotation, other.Rotation)) return false;
+      if (IsShared != other.IsShared) return false;
+      if(!triggerSources_.Equals(other.triggerSources_)) return false;
+      if(!triggerTargets_.Equals(other.triggerTargets_)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (Shape != global::COD.Types.LevelNodeShape.Start) hash ^= Shape.GetHashCode();
+      if (position_ != null) hash ^= Position.GetHashCode();
+      if (scale_ != null) hash ^= Scale.GetHashCode();
+      if (rotation_ != null) hash ^= Rotation.GetHashCode();
+      if (IsShared != false) hash ^= IsShared.GetHashCode();
+      hash ^= triggerSources_.GetHashCode();
+      hash ^= triggerTargets_.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (Shape != global::COD.Types.LevelNodeShape.Start) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Shape);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Position);
+      }
+      if (scale_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Scale);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Rotation);
+      }
+      if (IsShared != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsShared);
+      }
+      triggerSources_.WriteTo(output, _repeated_triggerSources_codec);
+      triggerTargets_.WriteTo(output, _repeated_triggerTargets_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Shape != global::COD.Types.LevelNodeShape.Start) {
+        output.WriteRawTag(8);
+        output.WriteEnum((int) Shape);
+      }
+      if (position_ != null) {
+        output.WriteRawTag(18);
+        output.WriteMessage(Position);
+      }
+      if (scale_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(Scale);
+      }
+      if (rotation_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(Rotation);
+      }
+      if (IsShared != false) {
+        output.WriteRawTag(40);
+        output.WriteBool(IsShared);
+      }
+      triggerSources_.WriteTo(ref output, _repeated_triggerSources_codec);
+      triggerTargets_.WriteTo(ref output, _repeated_triggerTargets_codec);
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int CalculateSize() {
+      int size = 0;
+      if (Shape != global::COD.Types.LevelNodeShape.Start) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Shape);
+      }
+      if (position_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Position);
+      }
+      if (scale_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Scale);
+      }
+      if (rotation_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(Rotation);
+      }
+      if (IsShared != false) {
+        size += 1 + 1;
+      }
+      size += triggerSources_.CalculateSize(_repeated_triggerSources_codec);
+      size += triggerTargets_.CalculateSize(_repeated_triggerTargets_codec);
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(LevelNodeTrigger other) {
+      if (other == null) {
+        return;
+      }
+      if (other.Shape != global::COD.Types.LevelNodeShape.Start) {
+        Shape = other.Shape;
+      }
+      if (other.position_ != null) {
+        if (position_ == null) {
+          Position = new global::COD.Types.Vector();
+        }
+        Position.MergeFrom(other.Position);
+      }
+      if (other.scale_ != null) {
+        if (scale_ == null) {
+          Scale = new global::COD.Types.Vector();
+        }
+        Scale.MergeFrom(other.Scale);
+      }
+      if (other.rotation_ != null) {
+        if (rotation_ == null) {
+          Rotation = new global::COD.Types.Quaternion();
+        }
+        Rotation.MergeFrom(other.Rotation);
+      }
+      if (other.IsShared != false) {
+        IsShared = other.IsShared;
+      }
+      triggerSources_.Add(other.triggerSources_);
+      triggerTargets_.Add(other.triggerTargets_);
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            Shape = (global::COD.Types.LevelNodeShape) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 26: {
+            if (scale_ == null) {
+              Scale = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Scale);
+            break;
+          }
+          case 34: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+          case 40: {
+            IsShared = input.ReadBool();
+            break;
+          }
+          case 50: {
+            triggerSources_.AddEntriesFrom(input, _repeated_triggerSources_codec);
+            break;
+          }
+          case 58: {
+            triggerTargets_.AddEntriesFrom(input, _repeated_triggerTargets_codec);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            Shape = (global::COD.Types.LevelNodeShape) input.ReadEnum();
+            break;
+          }
+          case 18: {
+            if (position_ == null) {
+              Position = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Position);
+            break;
+          }
+          case 26: {
+            if (scale_ == null) {
+              Scale = new global::COD.Types.Vector();
+            }
+            input.ReadMessage(Scale);
+            break;
+          }
+          case 34: {
+            if (rotation_ == null) {
+              Rotation = new global::COD.Types.Quaternion();
+            }
+            input.ReadMessage(Rotation);
+            break;
+          }
+          case 40: {
+            IsShared = input.ReadBool();
+            break;
+          }
+          case 50: {
+            triggerSources_.AddEntriesFrom(ref input, _repeated_triggerSources_codec);
+            break;
+          }
+          case 58: {
+            triggerTargets_.AddEntriesFrom(ref input, _repeated_triggerTargets_codec);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   public sealed partial class AnimationFrame : pb::IMessage<AnimationFrame>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       , pb::IBufferMessage
@@ -3907,7 +6580,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[12]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[20]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4169,7 +6842,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[13]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[21]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4456,7 +7129,7 @@ namespace COD.Types {
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[14]; }
+      get { return global::COD.Types.TypesReflection.Descriptor.MessageTypes[22]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4475,6 +7148,7 @@ namespace COD.Types {
     public LevelNode(LevelNode other) : this() {
       isLocked_ = other.isLocked_;
       animations_ = other.animations_.Clone();
+      activeAnimation_ = other.activeAnimation_;
       switch (other.ContentCase) {
         case ContentOneofCase.LevelNodeStart:
           LevelNodeStart = other.LevelNodeStart.Clone();
@@ -4499,6 +7173,12 @@ namespace COD.Types {
           break;
         case ContentOneofCase.LevelNodeLobbyTerminal:
           LevelNodeLobbyTerminal = other.LevelNodeLobbyTerminal.Clone();
+          break;
+        case ContentOneofCase.LevelNodeTrigger:
+          LevelNodeTrigger = other.LevelNodeTrigger.Clone();
+          break;
+        case ContentOneofCase.LevelNodeParticleEmitter:
+          LevelNodeParticleEmitter = other.LevelNodeParticleEmitter.Clone();
           break;
       }
 
@@ -4609,17 +7289,53 @@ namespace COD.Types {
       }
     }
 
+    /// <summary>Field number for the "levelNodeTrigger" field.</summary>
+    public const int LevelNodeTriggerFieldNumber = 10;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.LevelNodeTrigger LevelNodeTrigger {
+      get { return contentCase_ == ContentOneofCase.LevelNodeTrigger ? (global::COD.Types.LevelNodeTrigger) content_ : null; }
+      set {
+        content_ = value;
+        contentCase_ = value == null ? ContentOneofCase.None : ContentOneofCase.LevelNodeTrigger;
+      }
+    }
+
+    /// <summary>Field number for the "levelNodeParticleEmitter" field.</summary>
+    public const int LevelNodeParticleEmitterFieldNumber = 11;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public global::COD.Types.LevelNodeParticleEmitter LevelNodeParticleEmitter {
+      get { return contentCase_ == ContentOneofCase.LevelNodeParticleEmitter ? (global::COD.Types.LevelNodeParticleEmitter) content_ : null; }
+      set {
+        content_ = value;
+        contentCase_ = value == null ? ContentOneofCase.None : ContentOneofCase.LevelNodeParticleEmitter;
+      }
+    }
+
     /// <summary>Field number for the "animations" field.</summary>
     public const int AnimationsFieldNumber = 15;
     private static readonly pb::FieldCodec<global::COD.Types.Animation> _repeated_animations_codec
         = pb::FieldCodec.ForMessage(122, global::COD.Types.Animation.Parser);
     private readonly pbc::RepeatedField<global::COD.Types.Animation> animations_ = new pbc::RepeatedField<global::COD.Types.Animation>();
     /// <summary>
-    ///A level node can have any number (might limit it in the UI) of named animations, if groups are involved every block that is part of the same animation should have an animation with the same name
+    ///A level node can have any number (might limit it in the UI) of named animations
     /// </summary>
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     public pbc::RepeatedField<global::COD.Types.Animation> Animations {
       get { return animations_; }
+    }
+
+    /// <summary>Field number for the "activeAnimation" field.</summary>
+    public const int ActiveAnimationFieldNumber = 16;
+    private int activeAnimation_;
+    /// <summary>
+    ///Index into animations, -1 if it is not playing an animation at the start, ignored if there are no animations (so will default to 0 in that case)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    public int ActiveAnimation {
+      get { return activeAnimation_; }
+      set {
+        activeAnimation_ = value;
+      }
     }
 
     private object content_;
@@ -4634,6 +7350,8 @@ namespace COD.Types {
       LevelNodeGroup = 7,
       LevelNodeGravity = 8,
       LevelNodeLobbyTerminal = 9,
+      LevelNodeTrigger = 10,
+      LevelNodeParticleEmitter = 11,
     }
     private ContentOneofCase contentCase_ = ContentOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4669,7 +7387,10 @@ namespace COD.Types {
       if (!object.Equals(LevelNodeGroup, other.LevelNodeGroup)) return false;
       if (!object.Equals(LevelNodeGravity, other.LevelNodeGravity)) return false;
       if (!object.Equals(LevelNodeLobbyTerminal, other.LevelNodeLobbyTerminal)) return false;
+      if (!object.Equals(LevelNodeTrigger, other.LevelNodeTrigger)) return false;
+      if (!object.Equals(LevelNodeParticleEmitter, other.LevelNodeParticleEmitter)) return false;
       if(!animations_.Equals(other.animations_)) return false;
+      if (ActiveAnimation != other.ActiveAnimation) return false;
       if (ContentCase != other.ContentCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -4686,7 +7407,10 @@ namespace COD.Types {
       if (contentCase_ == ContentOneofCase.LevelNodeGroup) hash ^= LevelNodeGroup.GetHashCode();
       if (contentCase_ == ContentOneofCase.LevelNodeGravity) hash ^= LevelNodeGravity.GetHashCode();
       if (contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal) hash ^= LevelNodeLobbyTerminal.GetHashCode();
+      if (contentCase_ == ContentOneofCase.LevelNodeTrigger) hash ^= LevelNodeTrigger.GetHashCode();
+      if (contentCase_ == ContentOneofCase.LevelNodeParticleEmitter) hash ^= LevelNodeParticleEmitter.GetHashCode();
       hash ^= animations_.GetHashCode();
+      if (ActiveAnimation != 0) hash ^= ActiveAnimation.GetHashCode();
       hash ^= (int) contentCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -4740,7 +7464,19 @@ namespace COD.Types {
         output.WriteRawTag(74);
         output.WriteMessage(LevelNodeLobbyTerminal);
       }
+      if (contentCase_ == ContentOneofCase.LevelNodeTrigger) {
+        output.WriteRawTag(82);
+        output.WriteMessage(LevelNodeTrigger);
+      }
+      if (contentCase_ == ContentOneofCase.LevelNodeParticleEmitter) {
+        output.WriteRawTag(90);
+        output.WriteMessage(LevelNodeParticleEmitter);
+      }
       animations_.WriteTo(output, _repeated_animations_codec);
+      if (ActiveAnimation != 0) {
+        output.WriteRawTag(128, 1);
+        output.WriteInt32(ActiveAnimation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -4786,7 +7522,19 @@ namespace COD.Types {
         output.WriteRawTag(74);
         output.WriteMessage(LevelNodeLobbyTerminal);
       }
+      if (contentCase_ == ContentOneofCase.LevelNodeTrigger) {
+        output.WriteRawTag(82);
+        output.WriteMessage(LevelNodeTrigger);
+      }
+      if (contentCase_ == ContentOneofCase.LevelNodeParticleEmitter) {
+        output.WriteRawTag(90);
+        output.WriteMessage(LevelNodeParticleEmitter);
+      }
       animations_.WriteTo(ref output, _repeated_animations_codec);
+      if (ActiveAnimation != 0) {
+        output.WriteRawTag(128, 1);
+        output.WriteInt32(ActiveAnimation);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -4823,7 +7571,16 @@ namespace COD.Types {
       if (contentCase_ == ContentOneofCase.LevelNodeLobbyTerminal) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(LevelNodeLobbyTerminal);
       }
+      if (contentCase_ == ContentOneofCase.LevelNodeTrigger) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LevelNodeTrigger);
+      }
+      if (contentCase_ == ContentOneofCase.LevelNodeParticleEmitter) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(LevelNodeParticleEmitter);
+      }
       size += animations_.CalculateSize(_repeated_animations_codec);
+      if (ActiveAnimation != 0) {
+        size += 2 + pb::CodedOutputStream.ComputeInt32Size(ActiveAnimation);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -4839,6 +7596,9 @@ namespace COD.Types {
         IsLocked = other.IsLocked;
       }
       animations_.Add(other.animations_);
+      if (other.ActiveAnimation != 0) {
+        ActiveAnimation = other.ActiveAnimation;
+      }
       switch (other.ContentCase) {
         case ContentOneofCase.LevelNodeStart:
           if (LevelNodeStart == null) {
@@ -4887,6 +7647,18 @@ namespace COD.Types {
             LevelNodeLobbyTerminal = new global::COD.Types.LevelNodeLobbyTerminal();
           }
           LevelNodeLobbyTerminal.MergeFrom(other.LevelNodeLobbyTerminal);
+          break;
+        case ContentOneofCase.LevelNodeTrigger:
+          if (LevelNodeTrigger == null) {
+            LevelNodeTrigger = new global::COD.Types.LevelNodeTrigger();
+          }
+          LevelNodeTrigger.MergeFrom(other.LevelNodeTrigger);
+          break;
+        case ContentOneofCase.LevelNodeParticleEmitter:
+          if (LevelNodeParticleEmitter == null) {
+            LevelNodeParticleEmitter = new global::COD.Types.LevelNodeParticleEmitter();
+          }
+          LevelNodeParticleEmitter.MergeFrom(other.LevelNodeParticleEmitter);
           break;
       }
 
@@ -4980,8 +7752,30 @@ namespace COD.Types {
             LevelNodeLobbyTerminal = subBuilder;
             break;
           }
+          case 82: {
+            global::COD.Types.LevelNodeTrigger subBuilder = new global::COD.Types.LevelNodeTrigger();
+            if (contentCase_ == ContentOneofCase.LevelNodeTrigger) {
+              subBuilder.MergeFrom(LevelNodeTrigger);
+            }
+            input.ReadMessage(subBuilder);
+            LevelNodeTrigger = subBuilder;
+            break;
+          }
+          case 90: {
+            global::COD.Types.LevelNodeParticleEmitter subBuilder = new global::COD.Types.LevelNodeParticleEmitter();
+            if (contentCase_ == ContentOneofCase.LevelNodeParticleEmitter) {
+              subBuilder.MergeFrom(LevelNodeParticleEmitter);
+            }
+            input.ReadMessage(subBuilder);
+            LevelNodeParticleEmitter = subBuilder;
+            break;
+          }
           case 122: {
             animations_.AddEntriesFrom(input, _repeated_animations_codec);
+            break;
+          }
+          case 128: {
+            ActiveAnimation = input.ReadInt32();
             break;
           }
         }
@@ -5074,8 +7868,30 @@ namespace COD.Types {
             LevelNodeLobbyTerminal = subBuilder;
             break;
           }
+          case 82: {
+            global::COD.Types.LevelNodeTrigger subBuilder = new global::COD.Types.LevelNodeTrigger();
+            if (contentCase_ == ContentOneofCase.LevelNodeTrigger) {
+              subBuilder.MergeFrom(LevelNodeTrigger);
+            }
+            input.ReadMessage(subBuilder);
+            LevelNodeTrigger = subBuilder;
+            break;
+          }
+          case 90: {
+            global::COD.Types.LevelNodeParticleEmitter subBuilder = new global::COD.Types.LevelNodeParticleEmitter();
+            if (contentCase_ == ContentOneofCase.LevelNodeParticleEmitter) {
+              subBuilder.MergeFrom(LevelNodeParticleEmitter);
+            }
+            input.ReadMessage(subBuilder);
+            LevelNodeParticleEmitter = subBuilder;
+            break;
+          }
           case 122: {
             animations_.AddEntriesFrom(ref input, _repeated_animations_codec);
+            break;
+          }
+          case 128: {
+            ActiveAnimation = input.ReadInt32();
             break;
           }
         }
